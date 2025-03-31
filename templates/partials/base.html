@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paylio - {% block title %}{% endblock title %}</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Account</a></li>
+        <li><a href="">Deposit</a></li>
+      </ul>
+    </nav>
+    {% block content %}{% endblock content %}
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
