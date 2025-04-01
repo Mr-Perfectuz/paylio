@@ -41,7 +41,11 @@ INSTALLED_APPS = [
 
     #Custom Apps
     "core",
-    "userauths"
+    "userauths",
+
+    #Package
+    "jazzmin",
+
 ]
 
 MIDDLEWARE = [
@@ -129,3 +133,14 @@ MEDIA_ROOT = [os.path.join(BASE_DIR, 'media')]
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+JAZZMIN_SETTINGS = {
+    # "site_title": "MovieX",
+    "site_header": "Paylio",
+    "site_brand": "Payment Made Easy...",
+    # "site_logo": "images/logo.jpg",
+    "copyright": "Paylio - All RIght Reserverd © Copyright 2023",
+    # "order_with_respect_to": ["core", 'userauths', "transactions" , 'addon', 'blog']
+
+    
+}
