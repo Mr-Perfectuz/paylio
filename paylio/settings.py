@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+     #Package
+    "jazzmin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -43,8 +45,7 @@ INSTALLED_APPS = [
     "core",
     "userauths",
 
-    #Package
-    "jazzmin",
+   
 
 ]
 
@@ -139,7 +140,7 @@ JAZZMIN_SETTINGS = {
     "site_header": "Paylio",
     "site_brand": "Payment Made Easy...",
     # "site_logo": "images/logo.jpg",
-    "copyright": "Paylio - All RIght Reserverd © Copyright 2023",
+    "copyright": "Paylio - All RIght Reserverd © Copyright 2025",
     # "order_with_respect_to": ["core", 'userauths', "transactions" , 'addon', 'blog']
 
     
