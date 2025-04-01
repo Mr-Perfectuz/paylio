@@ -32,21 +32,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-     #Package
+    # Package
     "jazzmin",
-    "django.contrib.admin",
+    "django.contrib.admin",  # Uncomment this line
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    #Custom Apps
+    # Custom Apps
     "core",
     "userauths",
-
-   
-
+    "paylio",  # Add this since it's your project app (contains settings.py, urls.py, etc.)
 ]
 
 MIDDLEWARE = [
@@ -128,12 +126,13 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 MEDIA_URL = '/media/'
-MEDIA_ROOT = [os.path.join(BASE_DIR, 'media')]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+AUTH_USER_MODEL = 'userauths.User'
 
 JAZZMIN_SETTINGS = {
     # "site_title": "MovieX",
