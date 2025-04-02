@@ -34,17 +34,18 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # Package
     "jazzmin",
-    "django.contrib.admin",  # Uncomment this line
+     # Custom Apps
+    "core",
+    "userauths",
+    "paylio",  
+    "django.contrib.admin",  
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    # Custom Apps
-    "core",
-    "userauths",
-    "paylio",  # Add this since it's your project app (contains settings.py, urls.py, etc.)
+    
 ]
 
 MIDDLEWARE = [
@@ -124,7 +125,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'paylio', 'static')]
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -135,12 +137,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 AUTH_USER_MODEL = 'userauths.User'
 
 JAZZMIN_SETTINGS = {
-    # "site_title": "MovieX",
     "site_header": "Paylio",
     "site_brand": "Payment Made Easy...",
-    # "site_logo": "images/logo.jpg",
+    "site_logo": "images/logo.png",   
     "copyright": "Paylio - All RIght Reserverd © Copyright 2025",
-    # "order_with_respect_to": ["core", 'userauths', "transactions" , 'addon', 'blog']
-
-    
 }

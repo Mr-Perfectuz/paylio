@@ -18,10 +18,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views
+from django.conf.urls.static import static
+from django.conf import settings
+import os
+
 
 urlpatterns = [
-    # path("admin/", admin.site.urls),
+    path("admin/", admin.site.urls),
     path("", views.index, name="index"),
     path("about/", views.about, name="about"),
     path("contact/", views.contact, name="contact"),
 ]
+ 
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=os.path.join(settings.BASE_DIR, 'paylio', 'static'))
