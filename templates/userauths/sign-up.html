@@ -1,4 +1,6 @@
-{% extends 'partials/base.html' %} {% load static %} {% block content %}
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
 <!-- Login Reg start -->
 <section class="login-reg">
   <div class="overlay pt-120">
@@ -26,16 +28,17 @@
             {% csrf_token %}
             <div class="alert-danger alert">
               <!-- More robust error viewer -->
-
-              {% if form.errors %} {% for field in form %} {% for error in
-              field.errors %}
-              <p>{{ error }}</p>
-              {% endfor %} {% endfor %} {% endif %}
-
+              {% if form.errors %}
+                {% for field in form %}
+                  {% for error in field.errors %}
+                    <p>{{ error }}</p>
+                  {% endfor %}
+                {% endfor %}
+              {% endif %}
               <!-- Less robust error viewer -->
               <!-- {% if form.errors %}
-                                    <p> {{ form.errors }} </p>
-                                {% endif %} -->
+                  <p> {{ form.errors }} </p>
+              {% endif %} -->
             </div>
             <div class="row">
               <div class="col-12">
