@@ -129,6 +129,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'paylio', 'static')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+LOGOUT_REDIRECT_URL = '/admin/login/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -141,4 +142,9 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Payment Made Easy...",
     "site_logo": "images/logo.png",   
     "copyright": "Paylio - All RIght Reserverd © Copyright 2025",
+    "show_sidebar": True,
+    "show_ui_builder": True,
+    "topmenu_links": [
+        {"name": "Logout", "url": "admin:logout", "permissions": ["auth.view_user"]},
+    ],
 }
