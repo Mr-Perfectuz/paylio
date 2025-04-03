@@ -21,19 +21,17 @@
                             
                         </div>
                         <form method="POST">
-                            {% csrf_token %}  
-                            {% if form.errors %}
-                                <div class="alert alert-danger">
-                                    {% for error in form.non_field_errors %}
+                            {% csrf_token %}
+                           {% if form.errors %}
+                            <div class="alert alert-danger">
+                                {% for field in form %}
+                                    {% for error in field.errors %}
                                         <p>{{ error }}</p>
                                     {% endfor %}
-                                    {% for field in form %}
-                                        {% for error in field.errors %}
-                                            <p>{{ error }}</p>
-                                        {% endfor %}
-                                    {% endfor %}
-                                </div>
-                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
                             <div class="row">
                                 <div class="col-12">
                                     <div class="single-input">

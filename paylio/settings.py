@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "userauths",
     "paylio",  
     "account",
+    
     "django.contrib.admin",  
     "django.contrib.auth",
     "django.contrib.contenttypes",
