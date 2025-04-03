@@ -6,9 +6,12 @@ from core import views
 from django.conf.urls.static import static
 from django.conf import settings
 import os
+from core.views import AdminLogoutView  # Adjust if placed elsewhere
+
 
 
 urlpatterns = [
+    path('admin/logout/', AdminLogoutView.as_view(), name='admin-logout'),   
     path("admin/", admin.site.urls),
     path("", include("core.urls")),   
     path("about/", views.about, name="about"),
