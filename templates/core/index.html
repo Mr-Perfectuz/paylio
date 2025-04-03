@@ -1,4 +1,603 @@
-{% extends 'partials/base.html' %} {% block title %}Homepage{% endblock title %}
+{% extends "partials/base.html" %}
 {% block content %}
-<h1>My Account</h1>
+{% load static %}
+    <!-- Banner Section start -->
+    <section class="banner-section index">
+        <div class="overlay">
+            <div class="shape-area">
+                <img src="{% static 'assets/images/banner-box.png' %}" class="obj-1" alt="image">
+                <img src="{% static 'assets/images/banner-human.png' %}" class="obj-2" alt="image">
+                <img src="{% static 'assets/images/banner-rocket.png' %}" class="obj-3" alt="image">
+                <img src="{% static 'assets/images/banner-clock.png' %}" class="obj-4" alt="image">
+            </div>
+            <div class="banner-content">
+                <div class="container wow fadeInUp">
+                    <div class="content-shape">
+                        <img src="{% static 'assets/images/banner-wallet.png' %}" class="obj-1" alt="image">
+                    </div>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="main-content">
+                                <div class="top-area section-text">
+                                    <h5 class="sub-title">Trusted by over 3M customers</h5>
+                                    <h1 class="title">Pay Anyone, Anywhere</h1>
+                                    <p class="xlr">Quickly and easily send, receive and request money online with Paylio. Get a customised solution to fit your business needs.</p>
+                                </div>
+                                <div class="bottom-area d-xxl-flex">
+                                    <a href="sign-up.html" class="cmn-btn">Open a Free Account</a>
+                                    <a class="cmn-btn active mfp-iframe popupvideo" href="https://www.youtube.com/watch?v=Djz8Nc0Qxwk">See How it Works</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-5 col-md-6">
+                            <div class="send-money">
+                                <form action="#">
+                                    <div class="currency-area">
+                                        <div class="left-side">
+                                            <span class="mdr">You send</span>
+                                            <h5>1,000</h5>
+                                        </div>
+                                        <div class="right-side">
+                                            <select>
+                                                <option value="1">USD</option>
+                                                <option value="2">GBP</option>
+                                                <option value="3">AUS</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="calculation">
+                                        <div class="head-area">
+                                            <img src="{% static 'assets/images/icon/conversion.png' %}" alt="image">
+                                            <span class="mdr highlight">Show calculation</span>
+                                        </div>
+                                        <div class="calculation-details">
+                                            <div class="single-area d-flex align-items-center">
+                                                <div class="left-area">
+                                                    <i class="fas fa-minus"></i>
+                                                    <span class="mdr">10.04 USD</span>
+                                                </div>
+                                                <div class="right-area">
+                                                    <span class="mdr">Our fee</span>
+                                                </div>
+                                            </div>
+                                            <div class="single-area d-flex align-items-center">
+                                                <div class="left-area">
+                                                    <i class="fas fa-equals"></i>
+                                                    <span class="mdr">989.96 USD</span>
+                                                </div>
+                                                <div class="right-area">
+                                                    <span class="mdr">We’ll Convert</span>
+                                                </div>
+                                            </div>
+                                            <div class="single-area d-flex align-items-center">
+                                                <div class="left-area">
+                                                    <i class="fas fa-times"></i>
+                                                    <span class="mdr">1.3947</span>
+                                                </div>
+                                                <div class="right-area">
+                                                    <span class="mdr highlight">Paylio Rate</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="currency-area">
+                                        <div class="left-side">
+                                            <span class="mdr">Recipient gets</span>
+                                            <h5>1,380.69</h5>
+                                        </div>
+                                        <div class="right-side recipient">
+                                            <select>
+                                                <option value="1">AUS</option>
+                                                <option value="2">USD</option>
+                                                <option value="3">GBP</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="btn-area mt-40">
+                                        <a href="javascript:void(0)" class="cmn-btn w-100">Get Started</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="counter-section">
+            <div class="container wow fadeInUp">
+                <div class="row cus-mar">
+                    <div class="col-xl-3 col-md-3 col-sm-6">
+                        <div class="single-area d-flex align-items-center justify-content-center">
+                            <div class="text-area text-center">
+                                <h2><span class="counter">50</span><span>+</span></h2>
+                                <p>Supported Currencies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6">
+                        <div class="single-area d-flex align-items-center justify-content-center">
+                            <div class="text-area text-center">
+                                <h2><span class="counter">100</span><span>+</span></h2>
+                                <p>Available Countries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6">
+                        <div class="single-area d-flex align-items-center justify-content-center">
+                            <div class="text-area text-center">
+                                <h2><span class="counter">70</span><span>+</span></h2>
+                                <p>Payment Methods</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 col-sm-6">
+                        <div class="single-area d-flex align-items-center justify-content-center">
+                            <div class="text-area text-center">
+                                <h2><span class="counter">7</span><span>/</span><span class="counter">24</span><span>+</span></h2>
+                                <p>Support Team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section end -->
+
+    <!-- Global Payment start -->
+    <section class="global-payment">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">Send money in a heartbeat</h5>
+                            <h2 class="title">The World At Your Fingertips</h2>
+                            <p>Sign up to start saving on international money transfers and currency exchange.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-5 order-xl-0 order-1">
+                        <div class="image-area d-rtl left-side">
+                            <img src="{% static 'assets/images/global-payment-img.png' %}" alt="images" class="max-un">
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7">
+                        <div class="row cus-mar">
+                            <div class="col-sm-6 col-6">
+                                <div class="single-item">
+                                    <img src="{% static 'assets/images/icon/global-payment-icon-1.png' %}" alt="icon">
+                                    <h5>Peace of Mind</h5>
+                                    <p>Your money is safe with advanced encryption, fraud protection, and real-time transaction alerts — so you can send with confidence, every time.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6">
+                                <div class="single-item">
+                                    <img src="{% static 'assets/images/icon/global-payment-icon-2.png' %}" alt="icon">
+                                    <h5>Business-Ready</h5>
+                                    <p>Scale your operations with tailored payment solutions, seamless API integrations, and bulk payouts designed for startups and enterprises alike.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6">
+                                <div class="single-item">
+                                    <img src="{% static 'assets/images/icon/global-payment-icon-3.png' %}" alt="icon">
+                                    <h5>100% Transparent</h5>
+                                    <p>No hidden fees, no surprises. You get real-time breakdowns of every transaction so you always know where your money is going.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6">
+                                <div class="single-item">
+                                    <img src="{% static 'assets/images/icon/global-payment-icon-4.png' %}" alt="icon">
+                                    <h5>International Network</h5>
+                                    <p>Send and receive money across 100+ countries with local currency support and ultra-fast processing times — built for the global economy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Global Payment end -->
+
+    <!-- Our Solutions start -->
+    <section class="our-solutions">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-header dark-sec text-center">
+                            <h5 class="sub-title">High speeds. Low fees. No hassle.</h5>
+                            <h2 class="title">All Your Payments In One Place</h2>
+                            <p>Get used to low fees and great exchange rates on international money transfers.Expand your business worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cus-mar">
+                    <div class="col-xl-3 col-6">
+                        <div class="single-item">
+                            <img src="{% static 'assets/images/icon/our-solutions-icon-1.png' %}" alt="icon">
+                            <h5>Payments</h5>
+                            <p>Send money to individuals with low fees, reliable delivery, and support for both local and international transfers.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-6">
+                        <div class="single-item">
+                            <img src="{% static 'assets/images/icon/our-solutions-icon-2.png' %}" alt="icon">
+                            <h5>Collections</h5>
+                            <p>Receive payments from customers across the globe through multiple channels — cards, bank transfers, QR codes, and more.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-6">
+                        <div class="single-item">
+                            <img src="{% static 'assets/images/icon/our-solutions-icon-3.png' %}" alt="icon">
+                            <h5>Conversions</h5>
+                            <p>Convert between currencies at competitive exchange rates in real time. No hidden charges, just transparent FX every time.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-6">
+                        <div class="single-item">
+                            <img src="{% static 'assets/images/icon/our-solutions-icon-4.png' %}" alt="icon">
+                            <h5>Global Account</h5>
+                            <p>Get virtual accounts in multiple currencies to manage your global finances, receive cross-border payments, and grow internationally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Solutions end -->
+
+    <!-- How it Works start -->
+    <section class="how-it-works">
+        <div class="overlay pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">How it works?</h5>
+                            <h2 class="title">Just few steps to start</h2>
+                            <p>It's easier than you think. Follow 3 simple easy steps</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cus-mar">
+                    <div class="col-xl-3 col-sm-6 col-6">
+                        <div class="single-item first text-center">
+                            <img src="{% static 'assets/images/icon/how-works-icon-1.png' %}" alt="icon">
+                            <h5>Register for free</h5>
+                            <p>Simply sign up online for free and verify your identity</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-6">
+                        <div class="single-item second text-center">
+                            <img src="{% static 'assets/images/icon/how-works-icon-2.png' %}" alt="icon">
+                            <h5>Set up your transfer</h5>
+                            <p>Add a recipient's details and choose which currency ...</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-6">
+                        <div class="single-item first text-center">
+                            <img src="{% static 'assets/images/icon/how-works-icon-3.png' %}" alt="icon">
+                            <h5>Make your payment</h5>
+                            <p>Send us your funds with a bank transfer and we'll notify..</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-6">
+                        <div class="single-item text-center">
+                            <img src="{% static 'assets/images/icon/how-works-icon-4.png' %}" alt="icon">
+                            <h5>You're all done!</h5>
+                            <p>We inform you when the money has been sent and can also ...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How it Works end -->
+
+    <!-- App Download start -->
+    <section class="app-download">
+        <div class="overlay pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 order-lg-0 order-1">
+                        <div class="image-area d-rtl left-side">
+                            <img src="{% static 'assets/images/app-download-img.png' %}" alt="images" class="max-un">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="section-area">
+                            <h5 class="sub-title">App Download</h5>
+                            <h2 class="title">Fast, Secure Money Transfers</h2>
+                            <p>Access your account via your mobile phone. View balance, transfer funds, view transactions wherever you are.</p>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <img src="{% static 'assets/images/icon/check.png' %}" alt="icon"> Login with fingerprint or Face ID.
+                            </li>
+                            <li>
+                                <img src="{% static 'assets/images/icon/check.png' %}" alt="icon"> Simple few Taps to send money
+                            </li>
+                            <li>
+                                <img src="{% static 'assets/images/icon/check.png' %}" alt="icon"> View transaction history.
+                            </li>
+                            <li>
+                                <img src="{% static 'assets/images/icon/check.png' %}" alt="icon"> Get instant App notifications.
+                            </li>
+                        </ul>
+                        <div class="brand-area mt-40">
+                            <a href="javascript:void(0)">
+                                <img src="{% static 'assets/images/GooglePlay-btn.png' %}" alt="icon">
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="{% static 'assets/images/apple-btn.png' %}" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- App Download end -->
+
+    <!-- Testimonials start -->
+    <section class="testimonials">
+        <div class="overlay pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">Testimonials</h5>
+                            <h2 class="title">What Our Customers Say</h2>
+                            <p>245m+ happy clients all around the world. Don’t just take our word for it</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid wow fadeInUp">
+                <div class="testimonials-carousel">
+                    <div class="single-slide">
+                        <div class="single-content">
+                            <div class="start-area">
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                            </div>
+                            <h5 class="title-area">The Easiest Way to Get Paid</h5>
+                            <p class="xlr">"As a freelancer working with clients abroad, Paylio has been a total game-changer. Fast transfers, no hidden fees, and I get paid in my local currency. Love it."</p>
+                            <div class="profile-area d-flex align-items-center">
+                                <div class="icon-area">
+                                    <img src="{% static 'assets/images/testimonials-img-1.png' %}" alt="icon">
+                                </div>
+                                <div class="text-area">
+                                    <h5>Aspen Press</h5>
+                                    <p>Web Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slide">
+                        <div class="single-content">
+                            <div class="start-area">
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                            </div>
+                            <h5 class="title-area">Smooth, Seamless, Secure</h5>
+                            <p class="xlr">"We’ve tried a few payment platforms before, but Paylio stands out. The interface is intuitive, the fees are fair, and everything just works. Total peace of mind."</p>
+                            <div class="profile-area d-flex align-items-center">
+                                <div class="icon-area">
+                                    <img src="{% static 'assets/images/testimonials-img-2.png' %}" alt="icon">
+                                </div>
+                                <div class="text-area">
+                                    <h5>Courtney Henry</h5>
+                                    <p>Balance Studio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slide">
+                        <div class="single-content">
+                            <div class="start-area">
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                            </div>
+                            <h5 class="title-area">Perfect for Global Teams</h5>
+                            <p class="xlr">"Our team is spread across 5 countries, and Paylio helps us pay everyone on time, without the usual banking headaches. It’s flexible, fast, and super reliable."</p>
+                            <div class="profile-area d-flex align-items-center">
+                                <div class="icon-area">
+                                    <img src="{% static 'assets/images/testimonials-img-3.png' %}" alt="icon">
+                                </div>
+                                <div class="text-area">
+                                    <h5>Paul Howell</h5>
+                                    <p>President of Sales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slide">
+                        <div class="single-content">
+                            <div class="start-area">
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                            </div>
+                            <h5 class="title-area">Great Fast Reliable Service</h5>
+                            <p class="xlr">"Paylio made it easy to collect payments from my clients without stressing about wire transfers or exchange rates. I highly recommend Paylio to businesses with regular overseas payments."</p>
+                            <div class="profile-area d-flex align-items-center">
+                                <div class="icon-area">
+                                    <img src="{% static 'assets/images/testimonials-img-2.png' %}" alt="icon">
+                                </div>
+                                <div class="text-area">
+                                    <h5>Courtney Henry</h5>
+                                    <p>Balance Studio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- App Download end -->
+
+    <!-- FAQs In start -->
+    <section class="faqs-section">
+        <div class="overlay pt-120 pb-120">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">Frequently Asked Questions</h5>
+                            <h2 class="title">If you got questions we have answer</h2>
+                            <p>We have a list of frequently asked questions about us</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cus-mar">
+                    <div class="col-lg-6">
+                        <div class="accordion" id="accordionLeft">
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingLeftOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeftOne" aria-expanded="false" aria-controls="collapseLeftOne">
+                                        How to send money online?
+                                    </button>
+                                </h6>
+                                <div id="collapseLeftOne" class="accordion-collapse collapse" aria-labelledby="headingLeftOne" data-bs-parent="#accordionLeft">
+                                    <div class="accordion-body">
+                                        <p>Simply sign in to your Paylio account, choose “Send Money,” enter the recipient’s details, amount, and currency, then confirm the transfer. It’s fast, secure, and takes just a few clicks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingLeftTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeftTwo" aria-expanded="false" aria-controls="collapseLeftTwo">
+                                        How much are money transfer fees?
+                                    </button>
+                                </h6>
+                                <div id="collapseLeftTwo" class="accordion-collapse collapse" aria-labelledby="headingLeftTwo" data-bs-parent="#accordionLeft">
+                                    <div class="accordion-body">
+                                          <p>Paylio offers competitive, transparent pricing. Transfer fees vary by destination and payment method, but we always show you the exact cost upfront — no hidden charges, ever.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingLeftThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeftThree" aria-expanded="false" aria-controls="collapseLeftThree">
+                                        What is the fastest way to send money abroad?
+                                    </button>
+                                </h6>
+                                <div id="collapseLeftThree" class="accordion-collapse collapse" aria-labelledby="headingLeftThree" data-bs-parent="#accordionLeft">
+                                    <div class="accordion-body">
+                                        <p>Bank transfers via Paylio typically arrive within minutes, especially for popular corridors. We partner with trusted global networks to ensure your money gets there fast — and safely.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingLeftFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeftFour" aria-expanded="false" aria-controls="collapseLeftFour">
+                                        How to use Paylio?
+                                    </button>
+                                </h6>
+                                <div id="collapseLeftFour" class="accordion-collapse collapse" aria-labelledby="headingLeftFour" data-bs-parent="#accordionLeft">
+                                    <div class="accordion-body">
+                                         <p>Create a free account, verify your identity, and you're ready to go. You can send, receive, request payments, and even manage business payouts — all from your Paylio dashboard.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingLeftFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeftFive" aria-expanded="false" aria-controls="collapseLeftFive">
+                                        How does Paylio protect your money?
+                                    </button>
+                                </h6>
+                                <div id="collapseLeftFive" class="accordion-collapse collapse" aria-labelledby="headingLeftFive" data-bs-parent="#accordionLeft">
+                                    <div class="accordion-body">
+                                        <p>We use bank-grade encryption, secure data centers, two-factor authentication, and regulatory compliance (including KYC/AML) to ensure your funds and data are always safe.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="accordion" id="accordionRight">
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingRightOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightOne" aria-expanded="false" aria-controls="collapseRightOne">
+                                        Are money transfer apps safe?
+                                    </button>
+                                </h6>
+                                <div id="collapseRightOne" class="accordion-collapse collapse" aria-labelledby="headingRightOne" data-bs-parent="#accordionRight">
+                                    <div class="accordion-body">
+                                        <p>Yes. Paylio uses bank-grade security, two-factor authentication, and full encryption to protect your transactions and personal data. We’re fully compliant with global financial regulations, so your money is always in safe hands.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingRightTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightTwo" aria-expanded="false" aria-controls="collapseRightTwo">
+                                        How much money can I send?
+                                    </button>
+                                </h6>
+                                <div id="collapseRightTwo" class="accordion-collapse collapse" aria-labelledby="headingRightTwo" data-bs-parent="#accordionRight">
+                                    <div class="accordion-body">
+                                         <p>Transfer limits depend on your account verification level and destination country. Verified users can send larger amounts, with some limits reaching up to $50,000 per transaction. You’ll always see your exact limit before confirming a transfer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingRightThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightThree" aria-expanded="false" aria-controls="collapseRightThree">
+                                        Which currency can I send?
+                                    </button>
+                                </h6>
+                                <div id="collapseRightThree" class="accordion-collapse collapse" aria-labelledby="headingRightThree" data-bs-parent="#accordionRight">
+                                    <div class="accordion-body">
+                                        <p>Paylio supports over 40 currencies including USD, EUR, GBP, INR, NGN, and more. We’re constantly expanding our list to make sending money globally as seamless as sending a text.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingRightFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightFour" aria-expanded="false" aria-controls="collapseRightFour">
+                                        Can I cancel a transaction?
+                                    </button>
+                                </h6>
+                                <div id="collapseRightFour" class="accordion-collapse collapse" aria-labelledby="headingRightFour" data-bs-parent="#accordionRight">
+                                    <div class="accordion-body">
+                                        <p>If the payment hasn't been processed or picked up, you can cancel it from your Paylio dashboard. Once a transfer is complete, cancellations are not possible — but our support team is here to help with any issues.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingRightFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightFive" aria-expanded="false" aria-controls="collapseRightFive">
+                                        Can I send multiple payments?
+                                    </button>
+                                </h6>
+                                <div id="collapseRightFive" class="accordion-collapse collapse" aria-labelledby="headingRightFive" data-bs-parent="#accordionRight">
+                                    <div class="accordion-body">
+                                          <p>Absolutely. Paylio supports batch payments, making it easy to send money to multiple recipients at once. Perfect for payroll, contractor payouts, or vendor settlements — all in just a few clicks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQs In end -->
+  
 {% endblock content %}
