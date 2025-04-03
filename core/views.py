@@ -25,3 +25,7 @@ class AdminLogoutView(View):
     def get(self, request):
         logout(request)
         return redirect("/admin/login/?logged_out=true")
+    
+    def post(self, request):
+        logout(request)
+        return redirect("/admin/login/?logged_out=true")
