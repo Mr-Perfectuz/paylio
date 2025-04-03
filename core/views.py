@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
-# Create your views here.
-def index(request ):
+def index(request):
+    if request.user.is_authenticated:
+        return redirect("account:account")
     return render(request, "core/index.html")
 
 def contact(request):
@@ -10,3 +11,5 @@ def contact(request):
 
 def about(request):
     return render(request, "core/about.html")
+
+

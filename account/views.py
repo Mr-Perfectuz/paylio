@@ -6,8 +6,6 @@ from django.contrib.auth.decorators import login_required
 from core.forms import CreditCardForm
 from core.models import CreditCard, Notification, Transaction
 
-
-
 # @login_required
 def account(request):
     if request.user.is_authenticated:

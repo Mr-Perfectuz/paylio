@@ -22,3 +22,4 @@ class KYCForm(forms.ModelForm):
             "city": forms.TextInput(attrs={"placeholder":"City"}),
             'date_of_birth':DateInput
         }
+        
