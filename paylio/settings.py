@@ -32,20 +32,22 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.admin",
+    # Package
+    "jazzmin",
+     # Custom Apps
+    "core",
+    "userauths",
+    "paylio",  
+    "account",
+    
+    "django.contrib.admin",  
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    #Custom Apps
-    "core",
-    "userauths",
-
-    #Package
-    "jazzmin",
-
+    
 ]
 
 MIDDLEWARE = [
@@ -124,23 +126,28 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "static/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'paylio', 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')   
+
 MEDIA_URL = '/media/'
-MEDIA_ROOT = [os.path.join(BASE_DIR, 'media')]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+LOGOUT_REDIRECT_URL = '/admin/login/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+AUTH_USER_MODEL = 'userauths.User'
 
 JAZZMIN_SETTINGS = {
-    # "site_title": "MovieX",
     "site_header": "Paylio",
     "site_brand": "Payment Made Easy...",
-    # "site_logo": "images/logo.jpg",
-    "copyright": "Paylio - All RIght Reserverd © Copyright 2023",
-    # "order_with_respect_to": ["core", 'userauths', "transactions" , 'addon', 'blog']
-
-    
+    "site_logo": "images/logo.png",   
+    "copyright": "Paylio - All RIght Reserverd © Copyright 2025",
+    "show_sidebar": True,
+    "show_ui_builder": True,
+    "topmenu_links": [
+        {"name": "Logout", "url": "admin:logout", "permissions": ["auth.view_user"]},
+    ],
 }
