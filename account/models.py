@@ -5,6 +5,7 @@ from userauths.models import User
 from django.db.models.signals import post_save
 
 
+
 ACCOUNT_STATUS = (
     ("active", "Active"),
     ("pending", "Pending"),
