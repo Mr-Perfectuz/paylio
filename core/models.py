@@ -7,9 +7,9 @@ from shortuuid.django_fields import ShortUUIDField
 TRANSACTION_TYPE = (
     ("transfer", "Transfer"),
     ("recieved", "Recieved"),
-    ("withdraw", "withdraw"),
+    ("withdraw", "Withdraw"),
     ("refund", "Refund"),
-    ("request", "Payment Request"),
+    ("request", "Request"),
     ("none", "None")
 )
 

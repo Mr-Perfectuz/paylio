@@ -6,9 +6,12 @@ from core import views
 from django.conf.urls.static import static
 from django.conf import settings
 import os
+from core.views import AdminLogoutView  # Adjust if placed elsewhere
+
 
 
 urlpatterns = [
+    path('admin/logout/', AdminLogoutView.as_view(), name='admin-logout'),   
     path("admin/", admin.site.urls),
     path("", include("core.urls")),   
     path("about/", views.about, name="about"),
@@ -20,5 +23,8 @@ urlpatterns = [
 ]
  
 
+# if settings.DEBUG:
+#     urlpatterns += static(settings.STATIC_URL, document_root=os.path.join(settings.BASE_DIR, 'paylio', 'static'))
+
 if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=os.path.join(settings.BASE_DIR, 'paylio', 'static'))
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
