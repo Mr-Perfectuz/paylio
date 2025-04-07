@@ -28,7 +28,8 @@ TRANSACTION_STATUS = (
 CARD_TYPE = (
     ("master", "master"),
     ("visa", "visa"),
-    ("verve", "verve"),
+    ("American Express", "American Express"),
+    ("Paypal", "Paypal")
 
 )
 
