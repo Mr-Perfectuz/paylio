@@ -2,7 +2,7 @@ from django.contrib import admin
 from core.models import Transaction, CreditCard, Notification
 
 class TransactionAdmin(admin.ModelAdmin):
-    list_editable = ['amount', 'status', 'transaction_type']
+    list_editable = ['amount', 'status', 'transaction_type', 'reciever', 'sender' ]
     list_display = ['user', 'amount', 'status', 'transaction_type', 'reciever', 'sender']
 
 
