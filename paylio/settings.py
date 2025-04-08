@@ -27,8 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-&5arq9bhko6k2xk9c7qpt&1iyi7nh-i92le0-ekf*@j--pl3ul"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-ALLOWED_HOSTS = ["*"]
-print("🚨 ALLOWED_HOSTS (fallback):", ALLOWED_HOSTS)
+ALLOWED_HOSTS = ['paylio-app.up.railway.app', '127.0.0.1', 'localhost']
 DEBUG = True
 
 # ALLOWED_HOSTS = ['paylio-app.up.railway.app', 'localhost', '127.0.0.1']
@@ -142,7 +141,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # MEDIA_ROOT = BASE_DIR / 'media'
 LOGOUT_REDIRECT_URL = '/admin/login/'
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
