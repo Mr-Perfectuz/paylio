@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,14 +29,9 @@ SECRET_KEY = "django-insecure-&5arq9bhko6k2xk9c7qpt&1iyi7nh-i92le0-ekf*@j--pl3ul
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-DJANGO_ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "")
-
-# Handles comma-separated + trims whitespace
-ALLOWED_HOSTS = [host.strip() for host in DJANGO_ALLOWED_HOSTS.split(",") if host.strip()]
-#  ALLOWED_HOSTS = [host.strip() for host in os.getenv("DJANGO_ALLOWED_HOSTS", "localhost").split(",")]
-#ALLOWED_HOSTS = ['paylio-app.up.railway.app', 'localhost', '127.0.0.1']/
-# ALLOWED_HOSTS = ['paylio-app.up.railway.app']
-print("🚨 ALLOWED_HOSTS:", ALLOWED_HOSTS)
+raw_hosts = os.getenv("DJANGO_ALLOWED_HOSTS", "")
+ALLOWED_HOSTS = [host.strip() for host in raw_hosts.split(",") if host.strip()]
+print("🚨 ALLOWED_HOSTS (cleaned):", repr(ALLOWED_HOSTS))
 
 # Application definition
 
