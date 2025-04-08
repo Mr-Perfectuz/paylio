@@ -14,7 +14,7 @@ def contact(request):
     return render(request, "core/contact.html")
 
 def about(request):
-    return render(request, "core/about.html")
+    return render(request, "about/about.html")
 
 
 class AdminLogoutView(View):

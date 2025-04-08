@@ -13,7 +13,8 @@ from core.views import AdminLogoutView  # Adjust if placed elsewhere
 urlpatterns = [
     path('admin/logout/', AdminLogoutView.as_view(), name='admin-logout'),   
     path("admin/", admin.site.urls),
-    path("", include("core.urls")),   
+    path("", include("core.urls")),  
+    path("", views.index, name="index"), 
     path("about/", views.about, name="about"),
     path("contact/", views.contact, name="contact"),
     path("user/", include("userauths.urls")),
