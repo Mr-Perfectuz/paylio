@@ -26,12 +26,14 @@ SECRET_KEY = "django-insecure-&5arq9bhko6k2xk9c7qpt&1iyi7nh-i92le0-ekf*@j--pl3ul
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+DJANGO_ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "")
 
-ALLOWED_HOSTS = [host.strip() for host in os.getenv("DJANGO_ALLOWED_HOSTS", "localhost").split(",")]
-
-
+# Handles comma-separated + trims whitespace
+ALLOWED_HOSTS = [host.strip() for host in DJANGO_ALLOWED_HOSTS.split(",") if host.strip()]
+#  ALLOWED_HOSTS = [host.strip() for host in os.getenv("DJANGO_ALLOWED_HOSTS", "localhost").split(",")]
 #ALLOWED_HOSTS = ['paylio-app.up.railway.app', 'localhost', '127.0.0.1']/
 # ALLOWED_HOSTS = ['paylio-app.up.railway.app']
+print("🚨 ALLOWED_HOSTS:", ALLOWED_HOSTS)
 
 # Application definition
 
