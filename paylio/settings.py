@@ -27,19 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-&5arq9bhko6k2xk9c7qpt&1iyi7nh-i92le0-ekf*@j--pl3ul"
 
 # SECURITY WARNING: don't run with debug turned on in production!
+ALLOWED_HOSTS = ["*"]
+print("🚨 ALLOWED_HOSTS (fallback):", ALLOWED_HOSTS)
 DEBUG = True
-USE_X_FORWARDED_HOST = True
-
-ALLOWED_HOSTS = [host.strip() for host in os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",") if host.strip()]
-
-if "paylio-app.up.railway.app" not in ALLOWED_HOSTS:
-    ALLOWED_HOSTS.append("paylio-app.up.railway.app")
-
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-USE_X_FORWARDED_HOST = True
-
-print("🚨 ALLOWED_HOSTS (final):", repr(ALLOWED_HOSTS))
-
 
 # ALLOWED_HOSTS = ['paylio-app.up.railway.app', 'localhost', '127.0.0.1']
 
