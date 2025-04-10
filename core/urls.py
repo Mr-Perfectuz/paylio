@@ -7,8 +7,32 @@ app_name = "core"
 urlpatterns = [
     path("", views.index, name="index"),
 
-    #about
+    #personal
+    path('payments-01.html', views.payments, name='payments'),
+    path('subscriptions.html', views.subscriptions, name='subscriptions'),
+    path('security.html', views.security, name='security'),
+    path('fees.html', views.fees, name='fees'),
+
+    #business
+    path('business-account.html', views.business_account, name='business-account'),
+    path('corporate-card.html', views.corporate_card, name='corporate-card'),
+    path('expense-management.html', views.expense_management, name='expense-management'),
+    path('budgeting-and-analytics.html', views.budgeting_and_analytics, name='budgeting-and-analytics'),
+    path('integrations.html', views.integrations, name='integrations'),
+    path('invoice-management.html', views.invoice_management, name='invoice-management'),
+    path('rewards.html', views.rewards, name='rewards'),
+
+    #company
     path('about.html', views.about, name='about'),
+    path('career.html', views.career, name='career'),
+    path('career-details.html', views.career_details, name='career-details'),
+    path('blog-details.html', views.blog_details, name='blog-details'),
+    path('blog.html', views.blog, name='blog'),
+    path('error.html', views.error, name='error'),
+
+    #help
+    path('help-center.html', views.help_center, name='help-center'),
+    path('help-center-category.html', views.help_center_category, name='help-center-category'),
 
     # Transfers
     path("search-account/", transfer.search_users_account_number, name="search-account"),
