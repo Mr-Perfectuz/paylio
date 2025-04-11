@@ -4,6 +4,7 @@
 <p align="center">
     <a href="">
         <img src="public/image1.png" alt="Paylio Homepage">
+        <img src="public/image2.png" alt="Paylio Homepage">
     </a>
 </p>
 
