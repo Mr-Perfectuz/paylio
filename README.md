@@ -53,7 +53,7 @@
 - **Static Management**: WhiteNoise
 - **Admin UI**: Django Jazzmin
 - **Data Management**: django-import-export
-- **Deployment**: Railway, Gunicorn, Docker (optional)
+- **Deployment**: Railway, Gunicorn, Docker 
 - **Env Management**: python-dotenv
 
 ---
