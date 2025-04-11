@@ -38,7 +38,7 @@
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="/">
-                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -117,7 +117,7 @@
     <section class="banner-section inner-banner career">
         <div class="overlay">
             <div class="shape-area">
-                <img src="assets/images/banner-blog.png" class="shape-1" alt="image">
+                <img src="{% static 'assets/images/banner-blog.png' %}" class="shape-1" alt="image">
             </div>
             <div class="banner-content">
                 <div class="container wow fadeInUp">
@@ -190,7 +190,7 @@
                             </ul>
                             <form action="#">
                                 <div class="form-group mb-40 d-flex align-items-center">
-                                    <img src="assets/images/icon/search-icon-2.png" alt="icon">
+                                    <img src="{% static 'assets/images/icon/search-icon-2.png' %}" alt="icon">
                                     <input type="text" placeholder="Search">
                                 </div>
                             </form>
@@ -201,16 +201,17 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-1.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-1.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
                                                 <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
-                                                <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user.png" alt="image">
+                                            <p class="blog-content">
+                                                In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                            </p>   <div class="bottom-area d-flex align-items-center justify-content-between">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -219,7 +220,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-2.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-2.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -230,7 +231,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-3.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-3.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -241,7 +242,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-4.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-4.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -252,7 +253,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-5.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-5.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -263,7 +264,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-6.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-6.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -274,25 +275,28 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-7.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-7.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-8.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-8.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -303,7 +307,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-9.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-9.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -314,7 +318,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-10.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-10.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -325,16 +329,17 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-11.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-11.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
                                                 <a href="blog-details.html"><h4>Paylio Celebrates 3 years - and 500K business customers</h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
-                                                <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-3.png" alt="image">
+                                                <p class="blog-content">
+                                                    It's been an incredible journey! As we mark 3 years of powering seamless financial experiences, we're proud to serve over 500,000 business customers around the globe. This milestone is a reflection of our community’s trust and our commitment to building intuitive, secure payment solutions that scale.
+                                                </p>    <div class="bottom-area d-flex align-items-center justify-content-between">
+                                                    <img src="{% static 'assets/images/blog-user-3.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -343,7 +348,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-12.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-12.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -354,7 +359,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-13.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-13.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -369,7 +374,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-5.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-5.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -380,7 +385,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-6.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-6.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -391,16 +396,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-1.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-1.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -409,7 +416,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-2.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-2.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -420,7 +427,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-3.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-3.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -431,7 +438,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-4.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-4.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -442,16 +449,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-7.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-7.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -460,7 +469,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-8.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-8.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -471,7 +480,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-9.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-9.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -482,7 +491,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-10.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-10.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -493,16 +502,17 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-11.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-11.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
                                                 <a href="blog-details.html"><h4>Paylio Celebrates 3 years - and 500K business customers</h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
-                                                <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-3.png" alt="image">
+    <p class="blog-content">
+        From our humble beginnings to becoming a trusted platform for half a million businesses, Paylio's growth has been fueled by innovation, transparency, and a relentless focus on user needs. We're just getting started—bigger goals and better tools are on the horizon.
+    </p>                                                <div class="bottom-area d-flex align-items-center justify-content-between">
+                                                    <img src="{% static 'assets/images/blog-user-3.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -511,7 +521,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-12.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-12.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -522,7 +532,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-13.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-13.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -537,7 +547,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-8.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-8.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -548,7 +558,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-9.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-9.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -559,7 +569,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-10.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-10.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -570,16 +580,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-1.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-1.png' %}" alt="image">
                                             </div>
-                                            <div class="blog-text">
+                                                <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -588,7 +600,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-2.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-2.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -599,7 +611,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-3.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-3.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -610,7 +622,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-4.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-4.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -621,7 +633,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-5.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-5.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -632,7 +644,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-6.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-6.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -643,16 +655,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-7.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-7.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -661,16 +675,17 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-11.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-11.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
                                                 <a href="blog-details.html"><h4>Paylio Celebrates 3 years - and 500K business customers</h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
-                                                <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-3.png" alt="image">
+                                            <p class="blog-content">
+                                                    This anniversary is more than a number—it's a testament to the hard work of our team, the feedback from our users, and the loyalty of our community. As we celebrate 3 years in business with over 500,000 companies onboard, we look forward to scaling new heights together.
+                                                </p>    <div class="bottom-area d-flex align-items-center justify-content-between">
+                                                    <img src="{% static 'assets/images/blog-user-3.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -679,7 +694,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-12.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-12.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -690,7 +705,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-13.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-13.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -705,7 +720,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-2.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-2.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -716,7 +731,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-3.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-3.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -727,7 +742,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-4.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-4.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -738,16 +753,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-1.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-1.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -756,7 +773,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-5.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-5.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -767,7 +784,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-6.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-6.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -778,16 +795,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-7.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-7.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -796,7 +815,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-8.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-8.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -807,7 +826,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-9.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-9.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -818,7 +837,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-10.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-10.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -829,16 +848,17 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-11.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-11.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
                                                 <a href="blog-details.html"><h4>Paylio Celebrates 3 years - and 500K business customers</h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
-                                                <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-3.png" alt="image">
+                                            <p class="blog-content">
+                                                From our humble beginnings to becoming a trusted platform for half a million businesses, Paylio's growth has been fueled by innovation, transparency, and a relentless focus on user needs. We're just getting started—bigger goals and better tools are on the horizon.
+                                            </p>  <div class="bottom-area d-flex align-items-center justify-content-between">
+                                                    <img src="{% static 'assets/images/blog-user-3.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -847,7 +867,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-12.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-12.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -858,7 +878,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-13.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-13.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -873,7 +893,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-9.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-9.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -884,7 +904,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-8.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-8.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -895,7 +915,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-10.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-10.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -906,16 +926,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-1.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-1.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -924,7 +946,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-2.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-2.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -935,7 +957,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-3.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-3.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -946,7 +968,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-4.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-4.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -957,7 +979,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-5.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-5.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -968,7 +990,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-6.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-6.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -979,16 +1001,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-7.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-7.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -997,16 +1021,17 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-11.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-11.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
                                                 <a href="blog-details.html"><h4>Paylio Celebrates 3 years - and 500K business customers</h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
-                                                <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-3.png" alt="image">
+                                                <p class="blog-content">
+                                                        This anniversary is more than a number—it's a testament to the hard work of our team, the feedback from our users, and the loyalty of our community. As we celebrate 3 years in business with over 500,000 companies onboard, we look forward to scaling new heights together.
+                                                    </p>      <div class="bottom-area d-flex align-items-center justify-content-between">
+                                                    <img src="{% static 'assets/images/blog-user-3.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1015,7 +1040,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-12.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-12.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1026,7 +1051,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-13.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-13.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1041,7 +1066,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-3.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-3.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1052,7 +1077,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-2.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-2.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1063,7 +1088,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-4.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-4.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1074,16 +1099,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-1.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-1.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1092,7 +1119,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-5.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-5.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1103,7 +1130,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-6.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-6.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1114,16 +1141,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-7.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-7.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1132,7 +1161,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-8.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-8.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1143,7 +1172,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-9.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-9.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1154,7 +1183,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-10.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-10.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1165,16 +1194,17 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-11.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-11.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
                                                 <a href="blog-details.html"><h4>Paylio Celebrates 3 years - and 500K business customers</h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
-                                                <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-3.png" alt="image">
+                                            <p class="blog-content">
+                                                It's been an incredible journey! As we mark 3 years of powering seamless financial experiences, we're proud to serve over 500,000 business customers around the globe. This milestone is a reflection of our community’s trust and our commitment to building intuitive, secure payment solutions that scale.
+                                            </p>   <div class="bottom-area d-flex align-items-center justify-content-between">
+                                                    <img src="{% static 'assets/images/blog-user-3.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1183,7 +1213,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-12.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-12.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1194,7 +1224,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-13.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-13.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1209,16 +1239,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-7.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-7.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1227,7 +1259,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-3.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-3.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1238,7 +1270,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-2.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-2.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1249,7 +1281,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-4.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-4.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1260,16 +1292,18 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-1.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-1.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
-                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable </h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
+                                                <a href="blog-details.html"><h4>Money Transfer Services - Convenient and Reliable</h4></a>
+                                                <p class="blog-content">
+                                                    In today's fast-paced digital world, sending money should be as simple as sending a message. At Paylio, we offer secure and reliable money transfer services that help individuals and businesses move funds instantly across borders. With our user-friendly interface, competitive fees, and real-time transaction tracking, transferring money has never been easier or more transparent.
+                                                </p>
                                                 <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user.png" alt="image">
+                                                    <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1278,7 +1312,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-5.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-5.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1289,7 +1323,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-6.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-6.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1300,7 +1334,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-8.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-8.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1311,7 +1345,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-9.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-9.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1322,7 +1356,7 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-10.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-10.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1333,16 +1367,17 @@
                                     <div class="col-lg-12">
                                         <div class="single-post d-flex">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-11.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-11.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
                                                 <a href="blog-details.html"><h4>Paylio Celebrates 3 years - and 500K business customers</h4></a>
-                                                <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor lectus, posuere quis porttitor nec, elementum eu sem. In eleifend mi ut est tempor placerat. Nullam nulla ligula, tincidunt id finibus sit amet, fringilla at arcu.</p>
-                                                <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                    <img src="assets/images/blog-user-3.png" alt="image">
+                                            <p class="blog-content">
+                                                    From our humble beginnings to becoming a trusted platform for half a million businesses, Paylio's growth has been fueled by innovation, transparency, and a relentless focus on user needs. We're just getting started—bigger goals and better tools are on the horizon.
+                                                </p>  <div class="bottom-area d-flex align-items-center justify-content-between">
+                                                    <img src="{% static 'assets/images/blog-user-3.png' %}" alt="image">
                                                     <div class="btn-area d-flex align-items-center">
-                                                        <a href="blog-details.html">Read More<img src="assets/images/icon/arrow-right-4.png" alt="icon"></a>
+                                                        <a href="blog-details.html">Read More<img src="{% static 'assets/images/icon/arrow-right-4.png' %}" alt="icon"></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1351,7 +1386,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-12.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-12.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1362,7 +1397,7 @@
                                     <div class="col-lg-6 col-sm-10">
                                         <div class="single-post">
                                             <div class="thumbnail">
-                                                <img src="assets/images/blog-image-13.png" alt="image">
+                                                <img src="{% static 'assets/images/blog-image-13.png' %}" alt="image">
                                             </div>
                                             <div class="blog-text">
                                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -1392,7 +1427,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>
