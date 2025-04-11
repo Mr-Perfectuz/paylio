@@ -37,8 +37,8 @@
             <div class="container">
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                        <a class="navbar-brand" href="/">
+                            <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -100,9 +100,9 @@
                                 </li>
                             </ul>
                             <div class="right-area header-action d-flex align-items-center max-un">
-                                <a href="login.html" class="login">Login</a>
-                                <a href="sign-up.html" class="cmn-btn">Sign Up
-                                    <i class="icon-d-right-arrow-2"></i>
+                                <a href="/user/sign-in" class="login">Login</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign Up
+                                    <i class=" "></i>
                                 </a>
                             </div>
                         </div>
@@ -117,9 +117,9 @@
     <section class="banner-section invoice-management security">
         <div class="overlay">
             <div class="shape-area">
-                <img src="assets/images/security-shape-1.png" class="shape-1" alt="icon">
-                <img src="assets/images/security-shape-2.png" class="shape-2" alt="icon">
-                <img src="assets/images/security-shape-3.png" class="shape-3" alt="icon">
+                <img src="{% static 'assets/images/security-shape-1.png' %}" class="shape-1" alt="icon">
+                <img src="{% static 'assets/images/security-shape-2.png' %}" class="shape-2" alt="icon">
+                <img src="{% static 'assets/images/security-shape-3.png' %}" class="shape-3" alt="icon">
             </div>
             <div class="banner-content">
                 <div class="container wow fadeInUp">
@@ -132,7 +132,7 @@
                                     <p>Keep your money and payments secure with our high quality tech and card protections</p>
                                 </div>
                                 <div class="btn-area">
-                                    <a href="sign-up.html" class="cmn-btn">Get Started</a>
+                                    <a href="/user/sign-up" class="cmn-btn">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -157,14 +157,14 @@
                     </div>
                     <div class="col-md-5">
                         <div class="sec-image">
-                            <img src="assets/images/security-features-1.png" alt="image" class="w-100">
+                            <img src="{% static 'assets/images/security-features-1.png' %}" alt="image" class="w-100">
                         </div>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-5 order-md-0 order-1">
                         <div class="sec-image">
-                            <img src="assets/images/security-features-2.png" alt="image" class="w-100">
+                            <img src="{% static 'assets/images/security-features-2.png' %}" alt="image" class="w-100">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -174,7 +174,7 @@
                             <p>Stay in total control of your team’s spending by managing their permissions and levels of access. Create custom roles and choose the combination of apps and features you want them to use</p>
                         </div>
                         <div class="btn-area">
-                            <a href="sign-up.html" class="cmn-btn">Get Started</a>
+                            <a href="/user/sign-up" class="cmn-btn">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
                                 <h2 class="title">Get top tier security for your business today</h2>
                             </div>
                             <div class="btn-area">
-                                <a href="sign-up.html" class="cmn-btn active">Sign up in minutes</a>
+                                <a href="/user/sign-up" class="cmn-btn active">Sign up in minutes</a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>
@@ -237,10 +237,18 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="social-link d-flex justify-content-sm-end justify-content-center align-items-center">
-                                <a href="javascript:void(0)"><img src="assets/images/icon/facebook.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/linkedin.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/instagram.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/twitter.png" alt="icon"></a>
+                                <a href="https://www.facebook.com/anvarbekziyodov/" target="_blank">
+                                    <img src="{% static 'assets/images/icon/facebook.png' %}" alt="Facebook icon">
+                                </a>
+                                <a href="https://www.linkedin.com/in/anvarbekziyodov/" target="_blank">
+                                    <img src="{% static 'assets/images/icon/linkedin.png' %}" alt="LinkedIn icon">
+                                </a>
+                                <a href="https://www.instagram.com/anvarbek_ziyodov/" target="_blank">
+                                    <img src="{% static 'assets/images/icon/instagram.png' %}" alt="Instagram icon">
+                                </a>
+                                <a href="https://x.com/AnvarbekZiyodov" target="_blank">
+                                    <img src="{% static 'assets/images/icon/twitter.png' %}" alt="Twitter icon">
+                                </a>
                             </div>
                         </div>
                     </div>

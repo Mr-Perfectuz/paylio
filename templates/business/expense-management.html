@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="/">
                             <img src="assets/images/logo.png" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -283,7 +283,7 @@
                 </div>
             </div>
             <div class="container-fluid wow fadeInUp">
-                <div class="testimonials-carousel">
+                         <div class="testimonials-carousel">
                     <div class="single-slide">
                         <div class="single-content">
                             <div class="start-area">
@@ -293,11 +293,11 @@
                                 <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
                                 <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
                             </div>
-                            <h5 class="title-area">Great Fast Reliable Service</h5>
-                            <p class="xlr">"Paylio has always been a reliable solution for my business. I am very satisfied with their speedy service and professional customer care. I highly recommend Paylio to businesses with regular overseas payments."</p>
+                            <h5 class="title-area">The Easiest Way to Get Paid</h5>
+                            <p class="xlr">"As a freelancer working with clients abroad, Paylio has been a total game-changer. Fast transfers, no hidden fees, and I get paid in my local currency. Love it."</p>
                             <div class="profile-area d-flex align-items-center">
                                 <div class="icon-area">
-                                    <img src="assets/images/testimonials-img-1.png" alt="icon">
+                                    <img src="{% static 'assets/images/testimonials-img-1.png' %}" alt="icon">
                                 </div>
                                 <div class="text-area">
                                     <h5>Aspen Press</h5>
@@ -315,11 +315,11 @@
                                 <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
                                 <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
                             </div>
-                            <h5 class="title-area">Great Fast Reliable Service</h5>
-                            <p class="xlr">"Paylio has always been a reliable solution for my business. I am very satisfied with their speedy service and professional customer care. I highly recommend Paylio to businesses with regular overseas payments."</p>
+                            <h5 class="title-area">Smooth, Seamless, Secure</h5>
+                            <p class="xlr">"We’ve tried a few payment platforms before, but Paylio stands out. The interface is intuitive, the fees are fair, and everything just works. Total peace of mind."</p>
                             <div class="profile-area d-flex align-items-center">
                                 <div class="icon-area">
-                                    <img src="assets/images/testimonials-img-2.png" alt="icon">
+                                    <img src="{% static 'assets/images/testimonials-img-2.png' %}" alt="icon">
                                 </div>
                                 <div class="text-area">
                                     <h5>Courtney Henry</h5>
@@ -337,11 +337,11 @@
                                 <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
                                 <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
                             </div>
-                            <h5 class="title-area">Great Fast Reliable Service</h5>
-                            <p class="xlr">"Paylio has always been a reliable solution for my business. I am very satisfied with their speedy service and professional customer care. I highly recommend Paylio to businesses with regular overseas payments."</p>
+                            <h5 class="title-area">Perfect for Global Teams</h5>
+                            <p class="xlr">"Our team is spread across 5 countries, and Paylio helps us pay everyone on time, without the usual banking headaches. It’s flexible, fast, and super reliable."</p>
                             <div class="profile-area d-flex align-items-center">
                                 <div class="icon-area">
-                                    <img src="assets/images/testimonials-img-3.png" alt="icon">
+                                    <img src="{% static 'assets/images/testimonials-img-3.png' %}" alt="icon">
                                 </div>
                                 <div class="text-area">
                                     <h5>Paul Howell</h5>
@@ -360,10 +360,10 @@
                                 <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
                             </div>
                             <h5 class="title-area">Great Fast Reliable Service</h5>
-                            <p class="xlr">"Paylio has always been a reliable solution for my business. I am very satisfied with their speedy service and professional customer care. I highly recommend Paylio to businesses with regular overseas payments."</p>
+                            <p class="xlr">"Paylio made it easy to collect payments from my clients without stressing about wire transfers or exchange rates. I highly recommend Paylio to businesses with regular overseas payments."</p>
                             <div class="profile-area d-flex align-items-center">
                                 <div class="icon-area">
-                                    <img src="assets/images/testimonials-img-2.png" alt="icon">
+                                    <img src="{% static 'assets/images/testimonials-img-2.png' %}" alt="icon">
                                 </div>
                                 <div class="text-area">
                                     <h5>Courtney Henry</h5>
@@ -432,10 +432,18 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="social-link d-flex justify-content-sm-end justify-content-center align-items-center">
-                                <a href="javascript:void(0)"><img src="assets/images/icon/facebook.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/linkedin.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/instagram.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/twitter.png" alt="icon"></a>
+                                <a href="https://www.facebook.com/anvarbekziyodov/" target="_blank">
+                                    <img src="{% static 'assets/images/icon/facebook.png' %}" alt="Facebook icon">
+                                </a>
+                                <a href="https://www.linkedin.com/in/anvarbekziyodov/" target="_blank">
+                                    <img src="{% static 'assets/images/icon/linkedin.png' %}" alt="LinkedIn icon">
+                                </a>
+                                <a href="https://www.instagram.com/anvarbek_ziyodov/" target="_blank">
+                                    <img src="{% static 'assets/images/icon/instagram.png' %}" alt="Instagram icon">
+                                </a>
+                                <a href="https://x.com/AnvarbekZiyodov" target="_blank">
+                                    <img src="{% static 'assets/images/icon/twitter.png' %}" alt="Twitter icon">
+                                </a>
                             </div>
                         </div>
                     </div>

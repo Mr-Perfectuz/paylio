@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="/">
                             <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
 
                         </a>
@@ -78,7 +78,7 @@
                                     <a class="nav-link dropdown-toggle" href="javascript:void(0)"
                                         data-bs-toggle="dropdown" data-bs-auto-close="outside">Company</a>
                                     <ul class="dropdown-menu main-menu shadow">
-                                        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                                        <li><a class="nav-link" href="/about">About Us</a></li>
                                         <li><a class="nav-link" href="career.html">Career</a></li>
                                         <li><a class="nav-link" href="career-details.html">Career Details</a></li>
                                         <li class="dropend sub-navbar">
@@ -102,9 +102,9 @@
                                 </li>
                             </ul>
                             <div class="right-area header-action d-flex align-items-center max-un">
-                                <a href="login.html" class="login">Login</a>
-                                <a href="sign-up.html" class="cmn-btn">Sign Up
-                                    <i class="icon-d-right-arrow-2"></i>
+                                <a href="/user/sign-in" class="login">Login</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign Up
+                                    <i class=" "></i>
                                 </a>
                             </div>
                         </div>
@@ -119,8 +119,8 @@
     <section class="banner-section payment">
         <div class="overlay">
             <div class="shape-area">
-                <img src="assets/images/payment-illus-2.png" class="obj-1" alt="image">
-                <img src="assets/images/payment-illus.png" class="obj-2" alt="image">
+                <img src="{% static 'assets/images/payment-illus-2.png' %}" class="obj-1" alt="image">
+                <img src=" {% static 'assets/images/payment-illus.png' %}" class="obj-2" alt="image">
             </div>
             <div class="banner-content">
                 <div class="container wow fadeInUp">
@@ -133,8 +133,8 @@
                                     <p class="xlr">Start growing your business with our innovative payment solutions.</p>
                                 </div>
                                 <div class="bottom-area d-xxl-flex">
-                                    <a href="sign-up.html" class="cmn-btn">Open a Free Account</a>
-                                    <a class="cmn-btn active mfp-iframe popupvideo" href="https://www.youtube.com/watch?v=Djz8Nc0Qxwk">See How it Works</a>
+                                    <a href="/user/sign-up" class="cmn-btn">Open a Free Account</a>
+                                    <a class="cmn-btn active " href="/about">See How it Works</a>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-5 order-xl-0 order-1">
                         <div class="image-area d-rtl left-side">
-                            <img src="assets/images/global-payment-2.png" alt="images" class="max-un">
+                            <img src="{% static 'assets/images/global-payment-2.png' %} " alt="images" class="max-un">
                         </div>
                     </div>
                     <div class="col-xxl-6 col-xl-7">
@@ -166,28 +166,28 @@
                             </div>
                             <div class="col-sm-6 col-6">
                                 <div class="single-item">
-                                    <img src="assets/images/icon/features-icon-1.png" alt="icon">
+                                    <img src=" {% static 'assets/images/icon/features-icon-1.png ' %} " alt="icon">
                                     <h5>Cheaper than banks</h5>
                                     <p>Significant savings on your global payments</p>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-6">
                                 <div class="single-item">
-                                    <img src="assets/images/icon/features-icon-2.png" alt="icon">
+                                    <img src=" {% static 'assets/images/icon/features-icon-2.png' %}" alt="icon">
                                     <h5>Faster than banks</h5>
                                     <p>Have payments received in as soon as one..</p>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-6">
                                 <div class="single-item">
-                                    <img src="assets/images/icon/features-icon-3.png" alt="icon">
+                                    <img src=" {% static 'assets/images/icon/features-icon-3.png' %} " alt="icon">
                                     <h5>Global reach</h5>
                                     <p>Make payments across the globe to more than..</p>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-6">
                                 <div class="single-item">
-                                    <img src="assets/images/icon/features-icon-4.png" alt="icon">
+                                    <img src=" {% static 'assets/images/icon/features-icon-4.png' %} " alt="icon">
                                     <h5>Get local support</h5>
                                     <p>Receive full support from our local success..</p>
                                 </div>
@@ -216,21 +216,21 @@
                 <div class="row cus-mar">
                     <div class="col-md-4 col-sm-6">
                         <div class="single-item">
-                            <img src="assets/images/icon/more-features-icon-1.png" alt="icon">
+                            <img src="{% static 'assets/images/icon/more-features-icon-1.png' %} " alt="icon">
                             <h5>Global Coverage</h5>
                             <p>Grow into international markets by accepting payments wherever your customers are - via their preferred...</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="single-item">
-                            <img src="assets/images/icon/more-features-icon-2.png" alt="icon">
+                            <img src="{% static 'assets/images/icon/more-features-icon-2.png' %} " alt="icon">
                             <h5>Simple integration</h5>
                             <p>Access our payments platform via an easy API integration, through your chosen shopping cart or..</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="single-item">
-                            <img src="assets/images/icon/more-features-icon-3.png" alt="icon">
+                            <img src=" {% static 'assets/images/icon/more-features-icon-3.png' %} " alt="icon">
                             <h5>Scalable</h5>
                             <p>We've built highly scalable infrastructure from the ground up for security, stability, velocity.</p>
                         </div>
@@ -248,7 +248,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-0 order-1">
                         <div class="image-area d-rtl left-side">
-                            <img src="assets/images/accept-payment-img.png" alt="images" class="max-un">
+                            <img src="{% static 'assets/images/accept-payment-img.png' %} " alt="images" class="max-un">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -294,21 +294,21 @@
                 <div class="row cus-mar">
                     <div class="col-xl-4 col-6">
                         <div class="single-item">
-                            <img src="assets/images/icon/business-model-icon-1.png" alt="icon">
+                            <img src="{% static 'assets/images/icon/business-model-icon-1.png' %} " alt="icon">
                             <h5>Open an Account</h5>
                             <p>Get an account number and virtual card instantly upon approval. Manage it all from your..</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-6">
                         <div class="single-item">
-                            <img src="assets/images/icon/business-model-icon-2.png" alt="icon">
+                            <img src="{% static 'assets/images/icon/business-model-icon-2.png' %}" alt="icon">
                             <h5>No hidden fees</h5>
                             <p>Enjoy the lowest transfer fees in the market with transparent pricing and no monthly fees.</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-6">
                         <div class="single-item">
-                            <img src="assets/images/icon/business-model-icon-3.png" alt="icon">
+                            <img src="{% static 'assets/images/icon/business-model-icon-3.png' %}" alt="icon">
                             <h5>All in one place</h5>
                             <p>No need for separate accounts, cards, or software. Scale faster with a fully integrated..</p>
                         </div>
@@ -336,7 +336,7 @@
                     <div class="col-xl-6 cus-mar">
                         <div class="single-area">
                             <div class="icon-area">
-                                <img src="assets/images/icon/features-built-icon-1.png" alt="icon">
+                                <img src="{% static 'assets/images/icon/features-built-icon-1.png' %}" alt="icon">
                             </div>
                             <div class="text-area">
                                 <h5>Security is at our core</h5>
@@ -345,7 +345,7 @@
                         </div>
                         <div class="single-area">
                             <div class="icon-area">
-                                <img src="assets/images/icon/features-built-icon-2.png" alt="icon">
+                                <img src="{% static 'assets/images/icon/features-built-icon-2.png' %}" alt="icon">
                             </div>
                             <div class="text-area">
                                 <h5>Your data is protected</h5>
@@ -354,7 +354,7 @@
                         </div>
                         <div class="single-area">
                             <div class="icon-area">
-                                <img src="assets/images/icon/features-built-icon-3.png" alt="icon">
+                                <img src="{% static 'assets/images/icon/features-built-icon-3.png' %}" alt="icon">
                             </div>
                             <div class="text-area">
                                 <h5>Customer service is our priority</h5>
@@ -364,7 +364,7 @@
                     </div>
                     <div class="col-xl-6 text-center">
                         <div class="image-area">
-                            <img src="assets/images/features-built-frame.png" alt="images" class="max-un">
+                            <img src="{% static 'assets/images/features-built-frame.png' %}" alt="images" class="max-un">
                         </div>
                     </div>
                 </div>
@@ -385,7 +385,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>
@@ -397,7 +397,7 @@
                         <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start">
                             <div class="menu-item">
                                 <ul class="footer-link d-flex align-items-center">
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li><a href="help-center.html">Support</a></li>
                                     <li><a href="fees.html">Fees</a></li>
                                 </ul>
@@ -405,10 +405,18 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="social-link d-flex justify-content-sm-end justify-content-center align-items-center">
-                                <a href="javascript:void(0)"><img src="assets/images/icon/facebook.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/linkedin.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/instagram.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/twitter.png" alt="icon"></a>
+                                <a href="https://www.facebook.com/anvarbekziyodov/" target="_blank">
+                                    <img src="{% static 'assets/images/icon/facebook.png' %}" alt="Facebook icon">
+                                </a>
+                                <a href="https://www.linkedin.com/in/anvarbekziyodov/" target="_blank">
+                                    <img src="{% static 'assets/images/icon/linkedin.png' %}" alt="LinkedIn icon">
+                                </a>
+                                <a href="https://www.instagram.com/anvarbek_ziyodov/" target="_blank">
+                                    <img src="{% static 'assets/images/icon/instagram.png' %}" alt="Instagram icon">
+                                </a>
+                                <a href="https://x.com/AnvarbekZiyodov" target="_blank">
+                                    <img src="{% static 'assets/images/icon/twitter.png' %}" alt="Twitter icon">
+                                </a>
                             </div>
                         </div>
                     </div>
