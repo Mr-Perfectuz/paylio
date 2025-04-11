@@ -33,6 +33,13 @@ urlpatterns = [
     #help
     path('help-center.html', views.help_center, name='help-center'),
     path('help-center-category.html', views.help_center_category, name='help-center-category'),
+    
+    #dashboard
+    path('crypto.html', views.crypto, name='crypto'),
+    path('deposit-money.html', views.deposit_money, name='deposit-money'),
+    path('money-exchange.html', views.money_exchange, name='money-exchange'),
+    path('recipients.html', views.recipients, name='recipients'),
+    path('withdraw-money-step-1.html', views.withdraw_money, name='withdraw-money'),
 
     # Transfers
     path("search-account/", transfer.search_users_account_number, name="search-account"),
