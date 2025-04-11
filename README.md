@@ -5,6 +5,11 @@
     <a href="">
         <img src="public/image1.png" alt="Paylio Homepage">
         <img src="public/image2.png" alt="Paylio Homepage">
+        <img src="public/image3.png" alt="Paylio Homepage">
+        <img src="public/image4.png" alt="Paylio Homepage">
+        <img src="public/image5.png" alt="Paylio Homepage">
+        <img src="public/image6.png" alt="Paylio Homepage">
+        
     </a>
 </p>
 
