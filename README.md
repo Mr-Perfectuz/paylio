@@ -1,4 +1,4 @@
-﻿
+﻿﻿
 <div align="center">
 
 <p align="center">
@@ -13,10 +13,10 @@
 </p>
 
 <div>
-  <img src="https://img.shields.io/badge/-Django-black?style=for-the-badge&logo=django&color=092E20" alt="django" />
-  <img src="https://img.shields.io/badge/-Python-black?style=for-the-badge&logo=python&color=3776AB" alt="python" />
-  <img src="https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logo=javascript&color=F7DF1E" alt="javascript" />
-  <img src="https://img.shields.io/badge/-Bootstrap-black?style=for-the-badge&logo=bootstrap&color=7952B3" alt="bootstrap" />
+  <img src="https://img.shields.io/badge/-Django-black?style=for-the-badge&logo=django&color=092E20" alt="Django" />
+  <img src="https://img.shields.io/badge/-Python-black?style=for-the-badge&logo=python&color=3776AB" alt="Python" />
+  <img src="https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logo=javascript&color=F7DF1E" alt="Javascript" />
+  <img src="https://img.shields.io/badge/-Bootstrap-black?style=for-the-badge&logo=bootstrap&color=7952B3" alt="Bootstrap" />
 </div>
 
 <h3 align="center">Paylio - Digital Payments Made Easy</h3>
@@ -52,7 +52,7 @@
 - **Image Handling**: Pillow
 - **Static Management**: WhiteNoise
 - **Admin UI**: Django Jazzmin
-- **Data Management**: django-import-export
+- **Data Management**: SQLite with Django’s ORM
 - **Deployment**: Railway, Gunicorn, Docker 
 - **Env Management**: python-dotenv
 
@@ -123,6 +123,18 @@ whitenoise==6.9.0
 ---
 
 ## 🏎️ Pages
+
+### ▶ Dashboard
+- Account
+- Transactions
+- Receive
+- Exchange
+- Recipients
+- Crypto
+- Deposit Money
+- Withdraw Money
+- Support
+- Quit
 
 ### ▶ Personal
 - Freelancer Payments
