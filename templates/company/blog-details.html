@@ -38,7 +38,7 @@
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
                          <a class="navbar-brand" href="/">
-                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -76,7 +76,7 @@
                                     <a class="nav-link dropdown-toggle" href="javascript:void(0)"
                                         data-bs-toggle="dropdown" data-bs-auto-close="outside">Company</a>
                                     <ul class="dropdown-menu main-menu shadow">
-                                        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                                        <li><a class="nav-link" href="/about">About Us</a></li>
                                         <li><a class="nav-link" href="career.html">Career</a></li>
                                         <li><a class="nav-link" href="career-details.html">Career Details</a></li>
                                         <li class="dropend sub-navbar">
@@ -100,9 +100,9 @@
                                 </li>
                             </ul>
                             <div class="right-area header-action d-flex align-items-center max-un">
-                                <a href="login.html" class="login">Login</a>
-                                <a href="sign-up.html" class="cmn-btn">Sign Up
-                                    <i class="icon-d-right-arrow-2"></i>
+                                <a href="/user/sign-in" class="login">Login</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign Up
+                                    <i class=" "></i>
                                 </a>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                                 <div class="left-area d-flex align-items-center">
                                     <div class="profile-area d-flex align-items-center">
                                         <div class="profile-img">
-                                            <img src="assets/images/blog-user.png" alt="image">
+                                            <img src="{% static 'assets/images/blog-user.png' %}" alt="image">
                                         </div>
                                         <p>Peter Bates</p>
                                     </div>
@@ -186,7 +186,7 @@
                             </div>
                             <div class="single-content">
                                 <div class="blog-img">
-                                    <img src="assets/images/blog-image-14.png" alt="image">
+                                    <img src="{% static 'assets/images/blog-image-14.png' %}" alt="image">
                                 </div>
                             </div>
                             <div class="single-content">
@@ -203,27 +203,36 @@
                             <div class="authors-area d-flex align-items-start">
                                 <div class="profile-item d-flex align-items-center">
                                     <div class="profile-img">
-                                        <img src="assets/images/profile-img.png" alt="image">
+                                        <img src="{% static 'assets/images/profile-img.png' %}" alt="image">
                                     </div>
                                 </div>
                                 <div class="right-item">
                                     <div class="top-area d-flex align-items-start justify-content-between">
                                         <div class="left-area">
-                                            <h3 class="title">Darren Ellis</h3>
-                                            <h6>VP of Product</h6>
+                                            <h3 class="title">Anvarbek Ziyodov</h3>
+                                            <h6>Software developoer</h6>
                                         </div>
                                         <div class="right-area">
                                             <div class="social-link d-flex justify-content-sm-end justify-content-center align-items-center">
-                                                <a href="javascript:void(0)"><img src="assets/images/icon/facebook.png" alt="icon"></a>
-                                                <a href="javascript:void(0)"><img src="assets/images/icon/linkedin.png" alt="icon"></a>
-                                                <a href="javascript:void(0)"><img src="assets/images/icon/instagram.png" alt="icon"></a>
-                                                <a href="javascript:void(0)"><img src="assets/images/icon/twitter.png" alt="icon"></a>
+                                                <a href="https://www.facebook.com/anvarbekziyodov/" target="_blank">
+                                                    <img src="{% static 'assets/images/icon/facebook.png' %}" alt="Facebook icon">
+                                                </a>
+                                                <a href="https://www.linkedin.com/in/anvarbekziyodov/" target="_blank">
+                                                    <img src="{% static 'assets/images/icon/linkedin.png' %}" alt="LinkedIn icon">
+                                                </a>
+                                                <a href="https://www.instagram.com/anvarbek_ziyodov/" target="_blank">
+                                                    <img src="{% static 'assets/images/icon/instagram.png' %}" alt="Instagram icon">
+                                                </a>
+                                                <a href="https://x.com/AnvarbekZiyodov" target="_blank">
+                                                    <img src="{% static 'assets/images/icon/twitter.png' %}" alt="Twitter icon">
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="bottom-area">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl mi proin nunc cras nunc tellus ultrices est sagittis. Habitasse augue pulvinar id quam.</p>
-                                    </div>
+                                    <p>
+                                        Anvarbek is a full-stack developer at Paylio, specializing in building scalable web apps and secure transaction systems. Passionate about clean code and performance optimization, he plays a key role in developing our core financial infrastructure.
+                                    </p>   </div>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +259,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-post">
                             <div class="thumbnail">
-                                <img src="assets/images/blog-image-2.png" alt="image">
+                                <img src="{% static 'assets/images/blog-image-2.png' %}" alt="image">
                             </div>
                             <div class="blog-text">
                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -261,7 +270,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-post">
                             <div class="thumbnail">
-                                <img src="assets/images/blog-image-3.png" alt="image">
+                                <img src="{% static 'assets/images/blog-image-3.png' %}" alt="image">
                             </div>
                             <div class="blog-text">
                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -272,7 +281,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-post">
                             <div class="thumbnail">
-                                <img src="assets/images/blog-image-4.png" alt="image">
+                                <img src="{% static 'assets/images/blog-image-4.png' %}" alt="image">
                             </div>
                             <div class="blog-text">
                                 <p class="date">By Paylio - Feb 7, 2022</p>
@@ -298,7 +307,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>
@@ -310,7 +319,7 @@
                         <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start">
                             <div class="menu-item">
                                 <ul class="footer-link d-flex align-items-center">
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li><a href="help-center.html">Support</a></li>
                                     <li><a href="fees.html">Fees</a></li>
                                 </ul>
@@ -318,10 +327,10 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="social-link d-flex justify-content-sm-end justify-content-center align-items-center">
-                                <a href="javascript:void(0)"><img src="assets/images/icon/facebook.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/linkedin.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/instagram.png" alt="icon"></a>
-                                <a href="javascript:void(0)"><img src="assets/images/icon/twitter.png" alt="icon"></a>
+                                <a href="javascript:void(0)"><img src="{% static 'assets/images/icon/facebook.png' %}" alt="icon"></a>
+                                <a href="javascript:void(0)"><img src="{% static 'assets/images/icon/linkedin.png' %}" alt="icon"></a>
+                                <a href="javascript:void(0)"><img src="{% static 'assets/images/icon/instagram.png' %}" alt="icon"></a>
+                                <a href="javascript:void(0)"><img src="{% static 'assets/images/icon/twitter.png' %}" alt="icon"></a>
                             </div>
                         </div>
                     </div>

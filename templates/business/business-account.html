@@ -38,7 +38,7 @@
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="/">
-                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -76,7 +76,7 @@
                                     <a class="nav-link dropdown-toggle" href="javascript:void(0)"
                                         data-bs-toggle="dropdown" data-bs-auto-close="outside">Company</a>
                                     <ul class="dropdown-menu main-menu shadow">
-                                        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                                        <li><a class="nav-link" href="/about">About Us</a></li>
                                         <li><a class="nav-link" href="career.html">Career</a></li>
                                         <li><a class="nav-link" href="career-details.html">Career Details</a></li>
                                         <li class="dropend sub-navbar">
@@ -100,9 +100,9 @@
                                 </li>
                             </ul>
                             <div class="right-area header-action d-flex align-items-center max-un">
-                                <a href="login.html" class="login">Login</a>
-                                <a href="sign-up.html" class="cmn-btn">Sign Up
-                                    <i class="icon-d-right-arrow-2"></i>
+                                <a href="/user/sign-in" class="login">Login</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign Up
+                                    <i class=""></i>
                                 </a>
                             </div>
                         </div>
@@ -126,22 +126,22 @@
                                     <h1 class="title">Digital Business Accounts Made for the Modern Business</h1>
                                     <ul>
                                         <li>
-                                            <img src="assets/images/icon/check-2.png" alt="icon">
+                                            <img src="{% static 'assets/images/icon/check-2.png' %}" alt="icon">
                                             Save time
                                         </li>
                                         <li>
-                                            <img src="assets/images/icon/check-2.png" alt="icon">
+                                            <img src="{% static 'assets/images/icon/check-2.png' %}" alt="icon">
                                             Save money
                                         </li>
                                         <li>
-                                            <img src="assets/images/icon/check-2.png" alt="icon">
+                                            <img src="{% static 'assets/images/icon/check-2.png' %}" alt="icon">
                                             Helps you grow
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="bottom-area d-xxl-flex justify-content-center">
-                                    <a href="sign-up.html" class="cmn-btn">Open a Free Account</a>
-                                    <a class="cmn-btn active mfp-iframe popupvideo" href="https://www.youtube.com/watch?v=Djz8Nc0Qxwk">See How it Works</a>
+                                    <a href="/user/sign-up" class="cmn-btn">Open a Free Account</a>
+                                    <a class="cmn-btn active " href="/about">See How it Works</a>
                                 </div>
                             </div>
                         </div>
@@ -154,8 +154,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div class="img-area">
-                            <img src="assets/images/business-dashboard-1.png" alt="image">
-                            <img class="right-img" src="assets/images/business-dashboard-2.png" alt="image">
+                            <img src="{% static 'assets/images/business-dashboard-1.png' %}" alt="image">
+                            <img class="right-img" src="{% static 'assets/images/business-dashboard-2.png' %}" alt="image">
                         </div>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="sec-image">
-                            <img src="assets/images/business-features-1.png" alt="image" class="max-un">
+                            <img src="{% static 'assets/images/business-features-1.png' %}" alt="image" class="max-un">
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-md-5 order-md-0 order-1">
                             <div class="sec-image d-rtl">
-                                <img src="assets/images/business-features-2.png" alt="image" class="max-un">
+                                <img src="{% static 'assets/images/business-features-2.png' %}" alt="image" class="max-un">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -205,7 +205,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="sec-image">
-                            <img src="assets/images/business-features-3.png" alt="image" class="max-un">
+                            <img src="{% static 'assets/images/business-features-3.png' %}" alt="image" class="max-un">
                         </div>
                     </div>
                 </div>
@@ -335,14 +335,14 @@
                             <p>Get a corporate card that gives you cash back on digital spend. Issue unlimited cards to your team to manage corporate expenses.</p>
                         </div>
                         <div class="btn-area">
-                            <a href="sign-up.html" class="cmn-btn">Open a Free Account</a>
+                            <a href="/user/sign-up" class="cmn-btn">Open a Free Account</a>
                             <a href="help-center.html" class="cmn-btn active">Talk to an expert</a>
                         </div>
                         <ul class="mt-60">
-                            <li><img src="assets/images/icon/aws.png" alt="icon"></li>
-                            <li><img src="assets/images/icon/shopify.png" alt="icon"></li>
-                            <li><img src="assets/images/icon/magento.png" alt="icon"></li>
-                            <li><img src="assets/images/icon/xero.png" alt="icon"></li>
+                            <li><img src="{% static 'assets/images/icon/aws.png' %}" alt="icon"></li>
+                            <li><img src="{% static 'assets/images/icon/shopify.png' %}" alt="icon"></li>
+                            <li><img src="{% static 'assets/images/icon/magento.png' %}" alt="icon"></li>
+                            <li><img src="{% static 'assets/images/icon/xero.png' %}" alt="icon"></li>
                         </ul>
                     </div>
                 </div>
@@ -363,7 +363,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>
@@ -375,7 +375,7 @@
                         <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start">
                             <div class="menu-item">
                                 <ul class="footer-link d-flex align-items-center">
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li><a href="help-center.html">Support</a></li>
                                     <li><a href="fees.html">Fees</a></li>
                                 </ul>
@@ -422,18 +422,18 @@
     <!-- Footer Area End -->
 
     <!--==================================================================-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/fontawesome.js"></script>
-    <script src="assets/js/plugin/slick.js"></script>
-    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
-    <script src="assets/js/plugin/counter.js"></script>
-    <script src="assets/js/plugin/waypoint.min.js"></script>
-    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/plugin/wow.min.js"></script>
-    <script src="assets/js/plugin/plugin.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/fontawesome.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/slick.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/counter.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/waypoint.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/plugin.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
 </body>
 
 

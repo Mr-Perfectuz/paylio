@@ -39,7 +39,7 @@
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
                          <a class="navbar-brand" href="/">
-                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -78,7 +78,7 @@
                                     <a class="nav-link dropdown-toggle" href="javascript:void(0)"
                                         data-bs-toggle="dropdown" data-bs-auto-close="outside">Company</a>
                                     <ul class="dropdown-menu main-menu shadow">
-                                        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                                        <li><a class="nav-link" href="/about">About Us</a></li>
                                         <li><a class="nav-link" href="career.html">Career</a></li>
                                         <li><a class="nav-link" href="career-details.html">Career Details</a></li>
                                         <li class="dropend sub-navbar">
@@ -102,9 +102,9 @@
                                 </li>
                             </ul>
                             <div class="right-area header-action d-flex align-items-center max-un">
-                                <a href="login.html" class="login">Login</a>
-                                <a href="sign-up.html" class="cmn-btn">Sign Up
-                                    <i class="icon-d-right-arrow-2"></i>
+                                <a href="/user/sign-in" class="login">Login</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign Up
+                                    <i class=" "></i>
                                 </a>
                             </div>
                         </div>
@@ -125,7 +125,7 @@
                             <div class="left-area">
                                 <form action="#">
                                     <div class="form-group mb-40 d-flex align-items-center">
-                                        <img src="assets/images/icon/search-icon-2.png" alt="icon">
+                                        <img src="{% static 'assets/images/icon/search-icon-2.png' %}" alt="icon">
                                         <input type="text" placeholder="Search">
                                     </div>
                                 </form>
@@ -178,417 +178,319 @@
                             <div class="tab-pane fade show active" id="about-paylio" role="tabpanel"
                                 aria-labelledby="about-paylio-tab">
                                 <div class="right-item">
-                                    <h4 class="title">Adding Money</h4>
-                                    <div class="accordion" id="accordionAbout-paylio">
-                                        <div class="accordion-item">
-                                            <h6 class="accordion-header" id="headingAbout-paylioOne">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioOne"
-                                                    aria-expanded="false" aria-controls="collapseAbout-paylioOne">
-                                                    How can I add money using my linked bank account?
-                                                </button>
-                                            </h6>
-                                            <div id="collapseAbout-paylioOne" class="accordion-collapse collapse"
-                                                aria-labelledby="headingAbout-paylioOne"
-                                                data-bs-parent="#accordionAbout-paylio">
-                                                <div class="accordion-body">
-                                                    <ul>
-                                                        <li>Tap the 'Add money' button on your home screen.</li>
-                                                        <li>Review the different options to add money and choose 'Linked
-                                                            Bank Account'. If you've already linked a bank account, it
-                                                            will appear at the top of this list so you'll be able to
-                                                            select it instantly.</li>
-                                                        <li>Enter the amount you wish to add to your wallet.</li>
-                                                        <li>Once you've entered the desired amount, your bank will send
-                                                            an OTP (one time password) over SMS to your registered
-                                                            number to verify. Simply authenticate the transaction and
-                                                            we’ll do the rest.</li>
-                                                        <li>Your wallet balance will be updated immediately.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                            <h4 class="title">Adding Money</h4>
+                            <div class="accordion" id="accordionAbout-paylio">
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAbout-paylioOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioOne"
+                                            aria-expanded="false" aria-controls="collapseAbout-paylioOne">
+                                            How can I add money using my linked bank account?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAbout-paylioOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAbout-paylioOne"
+                                        data-bs-parent="#accordionAbout-paylio">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Tap the 'Add money' button on your home screen.</li>
+                                                <li>Select your linked bank account from the available options.</li>
+                                                <li>Enter the amount you'd like to add and confirm.</li>
+                                                <li>Authenticate the transaction using your bank's OTP or secure method.</li>
+                                                <li>Your Paylio balance will be updated instantly once verified.</li>
+                                            </ul>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h6 class="accordion-header" id="headingAbout-paylioTwo">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioTwo"
-                                                    aria-expanded="false" aria-controls="collapseAbout-paylioTwo">
-                                                    Is adding money with my linked bank account safe?
-                                                </button>
-                                            </h6>
-                                            <div id="collapseAbout-paylioTwo" class="accordion-collapse collapse"
-                                                aria-labelledby="headingAbout-paylioTwo"
-                                                data-bs-parent="#accordionAbout-paylio">
-                                                <div class="accordion-body">
-                                                    <ul>
-                                                        <li>Tap the 'Add money' button on your home screen.</li>
-                                                        <li>Review the different options to add money and choose 'Linked
-                                                            Bank Account'. If you've already linked a bank account, it
-                                                            will appear at the top of this list so you'll be able to
-                                                            select it instantly.</li>
-                                                        <li>Enter the amount you wish to add to your wallet.</li>
-                                                        <li>Once you've entered the desired amount, your bank will send
-                                                            an OTP (one time password) over SMS to your registered
-                                                            number to verify. Simply authenticate the transaction and
-                                                            we’ll do the rest.</li>
-                                                        <li>Your wallet balance will be updated immediately.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAbout-paylioTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioTwo"
+                                            aria-expanded="false" aria-controls="collapseAbout-paylioTwo">
+                                            Is adding money with my linked bank account safe?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAbout-paylioTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAbout-paylioTwo"
+                                        data-bs-parent="#accordionAbout-paylio">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Yes. All transactions use encrypted channels and secure banking APIs.</li>
+                                                <li>We never store your bank login credentials.</li>
+                                                <li>Authentication is done through OTPs or secure tokens issued by your bank.</li>
+                                                <li>Paylio is compliant with industry-standard security protocols.</li>
+                                            </ul>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h6 class="accordion-header" id="headingAbout-paylioThree">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseAbout-paylioThree" aria-expanded="false"
-                                                    aria-controls="collapseAbout-paylioThree">
-                                                    Can I add money with a shared or joint bank account?
-                                                </button>
-                                            </h6>
-                                            <div id="collapseAbout-paylioThree" class="accordion-collapse collapse"
-                                                aria-labelledby="headingAbout-paylioThree"
-                                                data-bs-parent="#accordionAbout-paylio">
-                                                <div class="accordion-body">
-                                                    <ul>
-                                                        <li>Tap the 'Add money' button on your home screen.</li>
-                                                        <li>Review the different options to add money and choose 'Linked
-                                                            Bank Account'. If you've already linked a bank account, it
-                                                            will appear at the top of this list so you'll be able to
-                                                            select it instantly.</li>
-                                                        <li>Enter the amount you wish to add to your wallet.</li>
-                                                        <li>Once you've entered the desired amount, your bank will send
-                                                            an OTP (one time password) over SMS to your registered
-                                                            number to verify. Simply authenticate the transaction and
-                                                            we’ll do the rest.</li>
-                                                        <li>Your wallet balance will be updated immediately.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAbout-paylioThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioThree"
+                                            aria-expanded="false" aria-controls="collapseAbout-paylioThree">
+                                            Can I add money with a shared or joint bank account?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAbout-paylioThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAbout-paylioThree"
+                                        data-bs-parent="#accordionAbout-paylio">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Yes, you can add money using a joint account if you are an authorized user.</li>
+                                                <li>Make sure your name is listed on the account and matches your Paylio profile.</li>
+                                                <li>Some banks may require additional verification for joint accounts.</li>
+                                                <li>If the account fails verification, try linking a personal account instead.</li>
+                                            </ul>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h6 class="accordion-header" id="headingAbout-paylioFour">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioFour"
-                                                    aria-expanded="false" aria-controls="collapseAbout-paylioFour">
-                                                    How do I transfer money to my Paylio account from a bank account?
-                                                </button>
-                                            </h6>
-                                            <div id="collapseAbout-paylioFour" class="accordion-collapse collapse"
-                                                aria-labelledby="headingAbout-paylioFour"
-                                                data-bs-parent="#accordionAbout-paylio">
-                                                <div class="accordion-body">
-                                                    <ul>
-                                                        <li>Tap the 'Add money' button on your home screen.</li>
-                                                        <li>Review the different options to add money and choose 'Linked
-                                                            Bank Account'. If you've already linked a bank account, it
-                                                            will appear at the top of this list so you'll be able to
-                                                            select it instantly.</li>
-                                                        <li>Enter the amount you wish to add to your wallet.</li>
-                                                        <li>Once you've entered the desired amount, your bank will send
-                                                            an OTP (one time password) over SMS to your registered
-                                                            number to verify. Simply authenticate the transaction and
-                                                            we’ll do the rest.</li>
-                                                        <li>Your wallet balance will be updated immediately.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAbout-paylioFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioFour"
+                                            aria-expanded="false" aria-controls="collapseAbout-paylioFour">
+                                            How do I transfer money to my Paylio account from a bank account?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAbout-paylioFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAbout-paylioFour"
+                                        data-bs-parent="#accordionAbout-paylio">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Log in and tap 'Add Money'.</li>
+                                                <li>Select 'Bank Transfer' if you prefer a manual transaction.</li>
+                                                <li>Use the provided Paylio account number and reference code.</li>
+                                                <li>Initiate the transfer through your bank app or web portal.</li>
+                                                <li>Funds will be credited as soon as we receive the transfer—usually within 1 business day.</li>
+                                            </ul>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h6 class="accordion-header" id="headingAbout-paylioFive">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioFive"
-                                                    aria-expanded="false" aria-controls="collapseAbout-paylioFive">
-                                                    Can I get my salary paid into my Paylio account?
-                                                </button>
-                                            </h6>
-                                            <div id="collapseAbout-paylioFive" class="accordion-collapse collapse"
-                                                aria-labelledby="headingAbout-paylioFive"
-                                                data-bs-parent="#accordionAbout-paylio">
-                                                <div class="accordion-body">
-                                                    <ul>
-                                                        <li>Tap the 'Add money' button on your home screen.</li>
-                                                        <li>Review the different options to add money and choose 'Linked
-                                                            Bank Account'. If you've already linked a bank account, it
-                                                            will appear at the top of this list so you'll be able to
-                                                            select it instantly.</li>
-                                                        <li>Enter the amount you wish to add to your wallet.</li>
-                                                        <li>Once you've entered the desired amount, your bank will send
-                                                            an OTP (one time password) over SMS to your registered
-                                                            number to verify. Simply authenticate the transaction and
-                                                            we’ll do the rest.</li>
-                                                        <li>Your wallet balance will be updated immediately.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAbout-paylioFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioFive"
+                                            aria-expanded="false" aria-controls="collapseAbout-paylioFive">
+                                            Can I get my salary paid into my Paylio account?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAbout-paylioFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAbout-paylioFive"
+                                        data-bs-parent="#accordionAbout-paylio">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Yes! You can receive your salary directly in your Paylio wallet.</li>
+                                                <li>Provide your employer with your Paylio account number and bank code.</li>
+                                                <li>Once payroll is processed, the salary will appear in your balance automatically.</li>
+                                                <li>You’ll receive a notification confirming the deposit.</li>
+                                            </ul>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h6 class="accordion-header" id="headingAbout-paylioSix">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioSix"
-                                                    aria-expanded="false" aria-controls="collapseAbout-paylioSix">
-                                                    Will I be charged for an incoming transfer?
-                                                </button>
-                                            </h6>
-                                            <div id="collapseAbout-paylioSix" class="accordion-collapse collapse"
-                                                aria-labelledby="headingAbout-paylioSix"
-                                                data-bs-parent="#accordionAbout-paylio">
-                                                <div class="accordion-body">
-                                                    <ul>
-                                                        <li>Tap the 'Add money' button on your home screen.</li>
-                                                        <li>Review the different options to add money and choose 'Linked
-                                                            Bank Account'. If you've already linked a bank account, it
-                                                            will appear at the top of this list so you'll be able to
-                                                            select it instantly.</li>
-                                                        <li>Enter the amount you wish to add to your wallet.</li>
-                                                        <li>Once you've entered the desired amount, your bank will send
-                                                            an OTP (one time password) over SMS to your registered
-                                                            number to verify. Simply authenticate the transaction and
-                                                            we’ll do the rest.</li>
-                                                        <li>Your wallet balance will be updated immediately.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAbout-paylioSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioSix"
+                                            aria-expanded="false" aria-controls="collapseAbout-paylioSix">
+                                            Will I be charged for an incoming transfer?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAbout-paylioSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAbout-paylioSix"
+                                        data-bs-parent="#accordionAbout-paylio">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>No, receiving money into your Paylio account is free.</li>
+                                                <li>Paylio does not charge for incoming bank transfers or salary deposits.</li>
+                                                <li>Some banks may charge outgoing fees, so always check with your bank.</li>
+                                                <li>You can view the complete fee breakdown in your transaction details.</li>
+                                            </ul>
                                         </div>
-                                        <div class="accordion-item">
-                                            <h6 class="accordion-header" id="headingAbout-paylioSeven">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseAbout-paylioSeven" aria-expanded="false"
-                                                    aria-controls="collapseAbout-paylioSeven">
-                                                    How long will it take for the amount to be transferred into my
-                                                    Paylio account?
-                                                </button>
-                                            </h6>
-                                            <div id="collapseAbout-paylioSeven" class="accordion-collapse collapse"
-                                                aria-labelledby="headingAbout-paylioSeven"
-                                                data-bs-parent="#accordionAbout-paylio">
-                                                <div class="accordion-body">
-                                                    <ul>
-                                                        <li>Tap the 'Add money' button on your home screen.</li>
-                                                        <li>Review the different options to add money and choose 'Linked
-                                                            Bank Account'. If you've already linked a bank account, it
-                                                            will appear at the top of this list so you'll be able to
-                                                            select it instantly.</li>
-                                                        <li>Enter the amount you wish to add to your wallet.</li>
-                                                        <li>Once you've entered the desired amount, your bank will send
-                                                            an OTP (one time password) over SMS to your registered
-                                                            number to verify. Simply authenticate the transaction and
-                                                            we’ll do the rest.</li>
-                                                        <li>Your wallet balance will be updated immediately.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAbout-paylioSeven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAbout-paylioSeven"
+                                            aria-expanded="false" aria-controls="collapseAbout-paylioSeven">
+                                            How long will it take for the amount to be transferred into my Paylio account?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAbout-paylioSeven" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAbout-paylioSeven"
+                                        data-bs-parent="#accordionAbout-paylio">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Most transfers using a linked bank account reflect instantly.</li>
+                                                <li>Bank transfers done manually may take 1–3 business days.</li>
+                                                <li>You’ll receive real-time updates and push notifications once the amount is received.</li>
+                                                <li>Weekends and holidays may cause minor delays depending on your bank.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="wallet-creation" role="tabpanel"
-                                aria-labelledby="wallet-creation-tab">
+                        </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="wallet-creation" role="tabpanel" aria-labelledby="wallet-creation-tab">
                                 <h4 class="title">Wallet Creation</h4>
                                 <div class="accordion" id="accordionWallet-creation">
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingWallet-creationOne">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseWallet-creationOne"
                                                 aria-expanded="false" aria-controls="collapseWallet-creationOne">
-                                                How can I add money using my linked bank account?
+                                                How do I create a Paylio wallet?
                                             </button>
                                         </h6>
                                         <div id="collapseWallet-creationOne" class="accordion-collapse collapse"
-                                            aria-labelledby="headingWallet-creationOne"
-                                            data-bs-parent="#accordionWallet-creation">
+                                            aria-labelledby="headingWallet-creationOne" data-bs-parent="#accordionWallet-creation">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Download the Paylio app or visit the website.</li>
+                                                    <li>Click "Sign Up" and complete the registration form with your personal details.</li>
+                                                    <li>Verify your phone number and email address using the OTPs sent to you.</li>
+                                                    <li>Once verified, your Paylio wallet will be created automatically and ready to use.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingWallet-creationTwo">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseWallet-creationTwo"
                                                 aria-expanded="false" aria-controls="collapseWallet-creationTwo">
-                                                Is adding money with my linked bank account safe?
+                                                Do I need a bank account to open a Paylio wallet?
                                             </button>
                                         </h6>
                                         <div id="collapseWallet-creationTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingWallet-creationTwo"
-                                            data-bs-parent="#accordionWallet-creation">
+                                            aria-labelledby="headingWallet-creationTwo" data-bs-parent="#accordionWallet-creation">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>No, a bank account is not required to open a Paylio wallet.</li>
+                                                    <li>However, linking a bank account allows you to deposit and withdraw funds easily.</li>
+                                                    <li>You can still receive payments and store money without a bank account.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingWallet-creationThree">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseWallet-creationThree"
                                                 aria-expanded="false" aria-controls="collapseWallet-creationThree">
-                                                Can I add money with a shared or joint bank account?
+                                                What documents are required to verify my wallet?
                                             </button>
                                         </h6>
                                         <div id="collapseWallet-creationThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingWallet-creationThree"
-                                            data-bs-parent="#accordionWallet-creation">
+                                            aria-labelledby="headingWallet-creationThree" data-bs-parent="#accordionWallet-creation">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>To verify your wallet, you’ll need a government-issued ID (e.g. passport, driver’s license).</li>
+                                                    <li>You may also be asked to submit a selfie for identity verification.</li>
+                                                    <li>For higher transaction limits, proof of address (like a utility bill) may be required.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingWallet-creationFour">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseWallet-creationFour"
                                                 aria-expanded="false" aria-controls="collapseWallet-creationFour">
-                                                How do I transfer money to my Paylio account from a bank account?
+                                                Can I create multiple wallets under one account?
                                             </button>
                                         </h6>
                                         <div id="collapseWallet-creationFour" class="accordion-collapse collapse"
-                                            aria-labelledby="headingWallet-creationFour"
-                                            data-bs-parent="#accordionWallet-creation">
+                                            aria-labelledby="headingWallet-creationFour" data-bs-parent="#accordionWallet-creation">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Currently, each Paylio user can only create one wallet per verified identity.</li>
+                                                    <li>This is to ensure compliance with anti-money laundering regulations.</li>
+                                                    <li>For business users, sub-wallet functionality may be available upon request.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingWallet-creationFive">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseWallet-creationFive"
                                                 aria-expanded="false" aria-controls="collapseWallet-creationFive">
-                                                Can I get my salary paid into my Paylio account?
+                                                What currencies are supported in my Paylio wallet?
                                             </button>
                                         </h6>
                                         <div id="collapseWallet-creationFive" class="accordion-collapse collapse"
-                                            aria-labelledby="headingWallet-creationFive"
-                                            data-bs-parent="#accordionWallet-creation">
+                                            aria-labelledby="headingWallet-creationFive" data-bs-parent="#accordionWallet-creation">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Paylio wallets currently support major global currencies like USD, EUR, GBP, and NGN.</li>
+                                                    <li>Your default currency is based on your location, but you can enable multi-currency support.</li>
+                                                    <li>Currency availability may vary based on regional regulations.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingWallet-creationSix">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseWallet-creationSix"
                                                 aria-expanded="false" aria-controls="collapseWallet-creationSix">
-                                                Will I be charged for an incoming transfer?
+                                                Can I close my wallet if I no longer need it?
                                             </button>
                                         </h6>
                                         <div id="collapseWallet-creationSix" class="accordion-collapse collapse"
-                                            aria-labelledby="headingWallet-creationSix"
-                                            data-bs-parent="#accordionWallet-creation">
+                                            aria-labelledby="headingWallet-creationSix" data-bs-parent="#accordionWallet-creation">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Yes, you can close your wallet by contacting our support team.</li>
+                                                    <li>Ensure your wallet balance is zero before requesting account closure.</li>
+                                                    <li>Once closed, all associated data will be deleted in accordance with our privacy policy.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingWallet-creationSeven">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseWallet-creationSeven"
                                                 aria-expanded="false" aria-controls="collapseWallet-creationSeven">
-                                                How long will it take for the amount to be transferred into my
-                                                Paylio account?
+                                                Can I use my Paylio wallet internationally?
                                             </button>
                                         </h6>
                                         <div id="collapseWallet-creationSeven" class="accordion-collapse collapse"
-                                            aria-labelledby="headingWallet-creationSeven"
-                                            data-bs-parent="#accordionWallet-creation">
+                                            aria-labelledby="headingWallet-creationSeven" data-bs-parent="#accordionWallet-creation">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Yes, your Paylio wallet can be accessed from anywhere in the world.</li>
+                                                    <li>You can send and receive payments globally as long as local regulations permit it.</li>
+                                                    <li>Some features may vary based on your country of use due to licensing and compliance laws.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="adding-money" role="tabpanel"
-                                aria-labelledby="adding-money-tab">
+
+                                    <div class="tab-pane fade" id="adding-money" role="tabpanel" aria-labelledby="adding-money-tab">
                                 <h4 class="title">Adding Money</h4>
                                 <div class="accordion" id="accordionAdding-money">
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingAdding-moneyOne">
                                             <button class="accordion-button collapsed" type="button"
@@ -598,25 +500,19 @@
                                             </button>
                                         </h6>
                                         <div id="collapseAdding-moneyOne" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-moneyOne"
-                                            data-bs-parent="#accordionAdding-money">
+                                            aria-labelledby="headingAdding-moneyOne" data-bs-parent="#accordionAdding-money">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Open the Paylio app or dashboard and tap on ‘Add Money’.</li>
+                                                    <li>Select your already linked bank account from the list.</li>
+                                                    <li>Enter the amount you want to add and tap ‘Proceed’.</li>
+                                                    <li>Confirm the transaction with your bank’s OTP or authentication method.</li>
+                                                    <li>Once verified, your Paylio balance will reflect the added amount instantly.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingAdding-moneyTwo">
                                             <button class="accordion-button collapsed" type="button"
@@ -626,25 +522,18 @@
                                             </button>
                                         </h6>
                                         <div id="collapseAdding-moneyTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-moneyTwo"
-                                            data-bs-parent="#accordionAdding-money">
+                                            aria-labelledby="headingAdding-moneyTwo" data-bs-parent="#accordionAdding-money">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Yes, Paylio uses industry-standard encryption to protect all transactions.</li>
+                                                    <li>Your bank credentials are never stored or shared with us.</li>
+                                                    <li>Each transaction is verified via OTP or multi-factor authentication.</li>
+                                                    <li>We monitor all activity 24/7 for potential fraud or unusual activity.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingAdding-moneyThree">
                                             <button class="accordion-button collapsed" type="button"
@@ -654,25 +543,18 @@
                                             </button>
                                         </h6>
                                         <div id="collapseAdding-moneyThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-moneyThree"
-                                            data-bs-parent="#accordionAdding-money">
+                                            aria-labelledby="headingAdding-moneyThree" data-bs-parent="#accordionAdding-money">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Yes, you can use a shared or joint bank account to add money to Paylio.</li>
+                                                    <li>However, the account must be verified and linked under your Paylio profile.</li>
+                                                    <li>Ensure you are an authorized user on the joint account for successful transfers.</li>
+                                                    <li>In some cases, additional verification might be required for joint accounts.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingAdding-moneyFour">
                                             <button class="accordion-button collapsed" type="button"
@@ -682,25 +564,19 @@
                                             </button>
                                         </h6>
                                         <div id="collapseAdding-moneyFour" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-moneyFour"
-                                            data-bs-parent="#accordionAdding-money">
+                                            aria-labelledby="headingAdding-moneyFour" data-bs-parent="#accordionAdding-money">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Choose ‘Bank Transfer’ under the ‘Add Money’ section of your dashboard.</li>
+                                                    <li>Paylio will display your unique virtual bank account details.</li>
+                                                    <li>Use your banking app to send money to the provided Paylio account number.</li>
+                                                    <li>Once Paylio receives the funds, your wallet balance will be updated automatically.</li>
+                                                    <li>This method may take up to 1 business day depending on your bank.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingAdding-moneyFive">
                                             <button class="accordion-button collapsed" type="button"
@@ -710,25 +586,18 @@
                                             </button>
                                         </h6>
                                         <div id="collapseAdding-moneyFive" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-moneyFive"
-                                            data-bs-parent="#accordionAdding-money">
+                                            aria-labelledby="headingAdding-moneyFive" data-bs-parent="#accordionAdding-money">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Yes, your Paylio account supports direct salary deposits.</li>
+                                                    <li>Provide your employer with your Paylio account number and routing code.</li>
+                                                    <li>Salaries are deposited just like any standard bank transfer.</li>
+                                                    <li>You’ll receive a confirmation notification as soon as the payment lands.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingAdding-moneySix">
                                             <button class="accordion-button collapsed" type="button"
@@ -738,874 +607,642 @@
                                             </button>
                                         </h6>
                                         <div id="collapseAdding-moneySix" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-moneySix"
-                                            data-bs-parent="#accordionAdding-money">
+                                            aria-labelledby="headingAdding-moneySix" data-bs-parent="#accordionAdding-money">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>No, Paylio does not charge any fees for receiving money into your account.</li>
+                                                    <li>However, check with your sending bank in case they apply an outgoing fee.</li>
+                                                    <li>All incoming transactions are reflected in full in your wallet balance.</li>
+                                                    <li>Fee breakdowns (if any) are shown in your transaction history.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingAdding-moneySeven">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseAdding-moneySeven"
                                                 aria-expanded="false" aria-controls="collapseAdding-moneySeven">
-                                                How long will it take for the amount to be transferred into my
-                                                Paylio account?
+                                                How long will it take for the amount to be transferred into my Paylio account?
                                             </button>
                                         </h6>
                                         <div id="collapseAdding-moneySeven" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-moneySeven"
-                                            data-bs-parent="#accordionAdding-money">
+                                            aria-labelledby="headingAdding-moneySeven" data-bs-parent="#accordionAdding-money">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Linked bank transfers typically reflect in your wallet within seconds.</li>
+                                                    <li>Manual bank transfers may take 1–3 business days depending on your bank's processing time.</li>
+                                                    <li>International transfers may take slightly longer due to currency conversion and validations.</li>
+                                                    <li>You’ll receive instant notifications once the funds are available.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="paylio-card" role="tabpanel"
-                                aria-labelledby="paylio-card-tab">
+
+                            <div class="tab-pane fade" id="paylio-card" role="tabpanel" aria-labelledby="paylio-card-tab">
                                 <h4 class="title">Paylio Card</h4>
                                 <div class="accordion" id="accordionPaylio-card">
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingPaylio-cardOne">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapsePaylio-cardOne"
                                                 aria-expanded="false" aria-controls="collapsePaylio-cardOne">
-                                                How can I add money using my linked bank account?
+                                                What is a Paylio Card and how does it work?
                                             </button>
                                         </h6>
                                         <div id="collapsePaylio-cardOne" class="accordion-collapse collapse"
-                                            aria-labelledby="headingPaylio-cardOne"
-                                            data-bs-parent="#accordionPaylio-card">
+                                            aria-labelledby="headingPaylio-cardOne" data-bs-parent="#accordionPaylio-card">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>The Paylio Card is a virtual or physical debit card linked directly to your Paylio wallet.</li>
+                                                    <li>You can use it to make purchases online or in-store, just like a regular debit card.</li>
+                                                    <li>The card uses your Paylio wallet balance to process transactions in real time.</li>
+                                                    <li>It supports contactless, chip, and PIN-enabled payments.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingPaylio-cardTwo">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapsePaylio-cardTwo"
                                                 aria-expanded="false" aria-controls="collapsePaylio-cardTwo">
-                                                Is adding money with my linked bank account safe?
+                                                How do I order a Paylio Card?
                                             </button>
                                         </h6>
                                         <div id="collapsePaylio-cardTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingPaylio-cardTwo"
-                                            data-bs-parent="#accordionPaylio-card">
+                                            aria-labelledby="headingPaylio-cardTwo" data-bs-parent="#accordionPaylio-card">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Log into your Paylio account and go to the ‘Cards’ section.</li>
+                                                    <li>Select ‘Request New Card’ and choose between a virtual or physical card.</li>
+                                                    <li>Provide your delivery address (for physical cards) and verify your identity if needed.</li>
+                                                    <li>Virtual cards are issued instantly; physical cards are delivered within 5–7 business days.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingPaylio-cardThree">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapsePaylio-cardThree"
                                                 aria-expanded="false" aria-controls="collapsePaylio-cardThree">
-                                                Can I add money with a shared or joint bank account?
+                                                How do I add funds to my Paylio Card?
                                             </button>
                                         </h6>
                                         <div id="collapsePaylio-cardThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingPaylio-cardThree"
-                                            data-bs-parent="#accordionPaylio-card">
+                                            aria-labelledby="headingPaylio-cardThree" data-bs-parent="#accordionPaylio-card">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>The Paylio Card is directly connected to your wallet balance—no separate loading needed.</li>
+                                                    <li>Simply add money to your Paylio wallet using a linked bank account or other funding source.</li>
+                                                    <li>Once funds are in your wallet, they are instantly available on your card.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingPaylio-cardFour">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapsePaylio-cardFour"
                                                 aria-expanded="false" aria-controls="collapsePaylio-cardFour">
-                                                How do I transfer money to my Paylio account from a bank account?
+                                                Can I use my Paylio Card internationally?
                                             </button>
                                         </h6>
                                         <div id="collapsePaylio-cardFour" class="accordion-collapse collapse"
-                                            aria-labelledby="headingPaylio-cardFour"
-                                            data-bs-parent="#accordionPaylio-card">
+                                            aria-labelledby="headingPaylio-cardFour" data-bs-parent="#accordionPaylio-card">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Yes, the Paylio Card can be used for international transactions wherever major networks like Visa or Mastercard are accepted.</li>
+                                                    <li>Foreign exchange fees may apply depending on the currency and location.</li>
+                                                    <li>You can also view transactions in real time via your dashboard while traveling.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingPaylio-cardFive">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapsePaylio-cardFive"
                                                 aria-expanded="false" aria-controls="collapsePaylio-cardFive">
-                                                Can I get my salary paid into my Paylio account?
+                                                Can I receive payments or refunds to my Paylio Card?
                                             </button>
                                         </h6>
                                         <div id="collapsePaylio-cardFive" class="accordion-collapse collapse"
-                                            aria-labelledby="headingPaylio-cardFive"
-                                            data-bs-parent="#accordionPaylio-card">
+                                            aria-labelledby="headingPaylio-cardFive" data-bs-parent="#accordionPaylio-card">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Yes, refunds from merchants will return to your Paylio Card just like any other debit card.</li>
+                                                    <li>Refunds usually reflect within 3–5 business days depending on the merchant’s processing time.</li>
+                                                    <li>You can also transfer funds to your Paylio wallet using supported payment methods.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingPaylio-cardSix">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapsePaylio-cardSix"
                                                 aria-expanded="false" aria-controls="collapsePaylio-cardSix">
-                                                Will I be charged for an incoming transfer?
+                                                What should I do if my card is lost or stolen?
                                             </button>
                                         </h6>
                                         <div id="collapsePaylio-cardSix" class="accordion-collapse collapse"
-                                            aria-labelledby="headingPaylio-cardSix"
-                                            data-bs-parent="#accordionPaylio-card">
+                                            aria-labelledby="headingPaylio-cardSix" data-bs-parent="#accordionPaylio-card">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Immediately log into your Paylio account and go to the 'Cards' section.</li>
+                                                    <li>Select the lost/stolen card and click ‘Freeze’ or ‘Block’ to prevent unauthorized use.</li>
+                                                    <li>You can request a replacement card by submitting a support request.</li>
+                                                    <li>Your funds remain safe in your wallet even if the card is compromised.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="accordion-item">
                                         <h6 class="accordion-header" id="headingPaylio-cardSeven">
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapsePaylio-cardSeven"
                                                 aria-expanded="false" aria-controls="collapsePaylio-cardSeven">
-                                                How long will it take for the amount to be transferred into my
-                                                Paylio account?
+                                                Are there any limits or restrictions on my Paylio Card?
                                             </button>
                                         </h6>
                                         <div id="collapsePaylio-cardSeven" class="accordion-collapse collapse"
-                                            aria-labelledby="headingPaylio-cardSeven"
-                                            data-bs-parent="#accordionPaylio-card">
+                                            aria-labelledby="headingPaylio-cardSeven" data-bs-parent="#accordionPaylio-card">
                                             <div class="accordion-body">
                                                 <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
+                                                    <li>Yes, daily spending and withdrawal limits may apply based on your verification level.</li>
+                                                    <li>You can check and manage your card limits from the Paylio dashboard.</li>
+                                                    <li>Some merchant types may be restricted for security or regulatory reasons.</li>
                                                 </ul>
                                             </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                                <div class="tab-pane fade" id="sending-money" role="tabpanel" aria-labelledby="sending-money-tab">
+                            <h4 class="title">Sending Money</h4>
+                            <div class="accordion" id="accordionSending-money">
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingSending-moneyOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyOne"
+                                            aria-expanded="false" aria-controls="collapseSending-moneyOne">
+                                            How do I send money using Paylio?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseSending-moneyOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSending-moneyOne" data-bs-parent="#accordionSending-money">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Log in to your Paylio account and tap the ‘Send Money’ button.</li>
+                                                <li>Choose the recipient from your contact list or enter their wallet/email ID.</li>
+                                                <li>Enter the amount, add a note (optional), and select the funding source.</li>
+                                                <li>Confirm and authorize the transfer. The recipient will be notified instantly.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="sending-money" role="tabpanel"
-                                aria-labelledby="sending-money-tab">
-                                <h4 class="title">Sending Money</h4>
-                                <div class="accordion" id="accordionSending-money">
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingSending-moneyOne">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyOne"
-                                                aria-expanded="false" aria-controls="collapseSending-moneyOne">
-                                                How can I add money using my linked bank account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseSending-moneyOne" class="accordion-collapse collapse"
-                                            aria-labelledby="headingSending-moneyOne"
-                                            data-bs-parent="#accordionSending-money">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingSending-moneyTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyTwo"
-                                                aria-expanded="false" aria-controls="collapseSending-moneyTwo">
-                                                Is adding money with my linked bank account safe?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseSending-moneyTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingSending-moneyTwo"
-                                            data-bs-parent="#accordionSending-money">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingSending-moneyThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyThree"
-                                                aria-expanded="false" aria-controls="collapseSending-moneyThree">
-                                                Can I add money with a shared or joint bank account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseSending-moneyThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingSending-moneyThree"
-                                            data-bs-parent="#accordionSending-money">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingSending-moneyFour">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyFour"
-                                                aria-expanded="false" aria-controls="collapseSending-moneyFour">
-                                                How do I transfer money to my Paylio account from a bank account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseSending-moneyFour" class="accordion-collapse collapse"
-                                            aria-labelledby="headingSending-moneyFour"
-                                            data-bs-parent="#accordionSending-money">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingSending-moneyFive">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyFive"
-                                                aria-expanded="false" aria-controls="collapseSending-moneyFive">
-                                                Can I get my salary paid into my Paylio account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseSending-moneyFive" class="accordion-collapse collapse"
-                                            aria-labelledby="headingSending-moneyFive"
-                                            data-bs-parent="#accordionSending-money">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingSending-moneySix">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSending-moneySix"
-                                                aria-expanded="false" aria-controls="collapseSending-moneySix">
-                                                Will I be charged for an incoming transfer?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseSending-moneySix" class="accordion-collapse collapse"
-                                            aria-labelledby="headingSending-moneySix"
-                                            data-bs-parent="#accordionSending-money">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingSending-moneySeven">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseSending-moneySeven"
-                                                aria-expanded="false" aria-controls="collapseSending-moneySeven">
-                                                How long will it take for the amount to be transferred into my
-                                                Paylio account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseSending-moneySeven" class="accordion-collapse collapse"
-                                            aria-labelledby="headingSending-moneySeven"
-                                            data-bs-parent="#accordionSending-money">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingSending-moneyTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyTwo"
+                                            aria-expanded="false" aria-controls="collapseSending-moneyTwo">
+                                            Is it safe to send money through Paylio?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseSending-moneyTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSending-moneyTwo" data-bs-parent="#accordionSending-money">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Yes. Every transaction is protected with end-to-end encryption and real-time fraud detection.</li>
+                                                <li>Transfers are authorized with OTP or biometric authentication.</li>
+                                                <li>Paylio never shares your financial information with recipients.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="account-mangament" role="tabpanel"
-                                aria-labelledby="account-mangament-tab">
-                                <h4 class="title">Wallet Mangament</h4>
-                                <div class="accordion" id="accordionAccount-mangament">
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAccount-mangamentOne">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentOne"
-                                                aria-expanded="false" aria-controls="collapseAccount-mangamentOne">
-                                                How can I add money using my linked bank account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAccount-mangamentOne" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAccount-mangamentOne"
-                                            data-bs-parent="#accordionAccount-mangament">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAccount-mangamentTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentTwo"
-                                                aria-expanded="false" aria-controls="collapseAccount-mangamentTwo">
-                                                Is adding money with my linked bank account safe?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAccount-mangamentTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAccount-mangamentTwo"
-                                            data-bs-parent="#accordionAccount-mangament">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAccount-mangamentThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseAccount-mangamentThree" aria-expanded="false"
-                                                aria-controls="collapseAccount-mangamentThree">
-                                                Can I add money with a shared or joint bank account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAccount-mangamentThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAccount-mangamentThree"
-                                            data-bs-parent="#accordionAccount-mangament">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAccount-mangamentFour">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseAccount-mangamentFour" aria-expanded="false"
-                                                aria-controls="collapseAccount-mangamentFour">
-                                                How do I transfer money to my Paylio account from a bank account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAccount-mangamentFour" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAccount-mangamentFour"
-                                            data-bs-parent="#accordionAccount-mangament">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAccount-mangamentFive">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseAccount-mangamentFive" aria-expanded="false"
-                                                aria-controls="collapseAccount-mangamentFive">
-                                                Can I get my salary paid into my Paylio account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAccount-mangamentFive" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAccount-mangamentFive"
-                                            data-bs-parent="#accordionAccount-mangament">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAccount-mangamentSix">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentSix"
-                                                aria-expanded="false" aria-controls="collapseAccount-mangamentSix">
-                                                Will I be charged for an incoming transfer?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAccount-mangamentSix" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAccount-mangamentSix"
-                                            data-bs-parent="#accordionAccount-mangament">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAccount-mangamentSeven">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseAccount-mangamentSeven" aria-expanded="false"
-                                                aria-controls="collapseAccount-mangamentSeven">
-                                                How long will it take for the amount to be transferred into my
-                                                Paylio account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAccount-mangamentSeven" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAccount-mangamentSeven"
-                                            data-bs-parent="#accordionAccount-mangament">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingSending-moneyThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyThree"
+                                            aria-expanded="false" aria-controls="collapseSending-moneyThree">
+                                            Can I send money to someone who doesn’t use Paylio?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseSending-moneyThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSending-moneyThree" data-bs-parent="#accordionSending-money">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Yes, you can send money using their email or mobile number.</li>
+                                                <li>They will receive a notification with steps to create a Paylio wallet and claim the money.</li>
+                                                <li>If not claimed within 7 days, the transfer will be automatically canceled and refunded to you.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="adding-recipient" role="tabpanel"
-                                aria-labelledby="adding-recipient-tab">
-                                <h4 class="title">Adding Recipient</h4>
-                                <div class="accordion" id="accordionAdding-recipient">
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAdding-recipientOne">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientOne"
-                                                aria-expanded="false" aria-controls="collapseAdding-recipientOne">
-                                                How can I add money using my linked bank account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAdding-recipientOne" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-recipientOne"
-                                            data-bs-parent="#accordionAdding-recipient">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAdding-recipientTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientTwo"
-                                                aria-expanded="false" aria-controls="collapseAdding-recipientTwo">
-                                                Is adding money with my linked bank account safe?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAdding-recipientTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-recipientTwo"
-                                            data-bs-parent="#accordionAdding-recipient">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAdding-recipientThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseAdding-recipientThree" aria-expanded="false"
-                                                aria-controls="collapseAdding-recipientThree">
-                                                Can I add money with a shared or joint bank account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAdding-recipientThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-recipientThree"
-                                            data-bs-parent="#accordionAdding-recipient">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAdding-recipientFour">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientFour"
-                                                aria-expanded="false" aria-controls="collapseAdding-recipientFour">
-                                                How do I transfer money to my Paylio account from a bank account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAdding-recipientFour" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-recipientFour"
-                                            data-bs-parent="#accordionAdding-recipient">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAdding-recipientFive">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientFive"
-                                                aria-expanded="false" aria-controls="collapseAdding-recipientFive">
-                                                Can I get my salary paid into my Paylio account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAdding-recipientFive" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-recipientFive"
-                                            data-bs-parent="#accordionAdding-recipient">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAdding-recipientSix">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientSix"
-                                                aria-expanded="false" aria-controls="collapseAdding-recipientSix">
-                                                Will I be charged for an incoming transfer?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAdding-recipientSix" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-recipientSix"
-                                            data-bs-parent="#accordionAdding-recipient">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h6 class="accordion-header" id="headingAdding-recipientSeven">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target="#collapseAdding-recipientSeven" aria-expanded="false"
-                                                aria-controls="collapseAdding-recipientSeven">
-                                                How long will it take for the amount to be transferred into my
-                                                Paylio account?
-                                            </button>
-                                        </h6>
-                                        <div id="collapseAdding-recipientSeven" class="accordion-collapse collapse"
-                                            aria-labelledby="headingAdding-recipientSeven"
-                                            data-bs-parent="#accordionAdding-recipient">
-                                            <div class="accordion-body">
-                                                <ul>
-                                                    <li>Tap the 'Add money' button on your home screen.</li>
-                                                    <li>Review the different options to add money and choose 'Linked
-                                                        Bank Account'. If you've already linked a bank account, it
-                                                        will appear at the top of this list so you'll be able to
-                                                        select it instantly.</li>
-                                                    <li>Enter the amount you wish to add to your wallet.</li>
-                                                    <li>Once you've entered the desired amount, your bank will send
-                                                        an OTP (one time password) over SMS to your registered
-                                                        number to verify. Simply authenticate the transaction and
-                                                        we’ll do the rest.</li>
-                                                    <li>Your wallet balance will be updated immediately.</li>
-                                                </ul>
-                                            </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingSending-moneyFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyFour"
+                                            aria-expanded="false" aria-controls="collapseSending-moneyFour">
+                                            Are there limits to how much I can send?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseSending-moneyFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSending-moneyFour" data-bs-parent="#accordionSending-money">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Yes, sending limits depend on your account type and verification level.</li>
+                                                <li>Unverified users have a lower daily/monthly limit for security reasons.</li>
+                                                <li>You can increase your limit by completing identity verification in the settings.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingSending-moneyFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSending-moneyFive"
+                                            aria-expanded="false" aria-controls="collapseSending-moneyFive">
+                                            Can I cancel a money transfer after sending?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseSending-moneyFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSending-moneyFive" data-bs-parent="#accordionSending-money">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>You can cancel a transfer only if it has not yet been accepted or completed.</li>
+                                                <li>Go to your transaction history, select the pending transfer, and tap ‘Cancel’.</li>
+                                                <li>Funds will be refunded to your Paylio wallet immediately after cancellation.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingSending-moneySix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSending-moneySix"
+                                            aria-expanded="false" aria-controls="collapseSending-moneySix">
+                                            What are the fees for sending money?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseSending-moneySix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSending-moneySix" data-bs-parent="#accordionSending-money">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Sending money within your country using wallet balance is free.</li>
+                                                <li>International or bank-funded transfers may include a small fee, displayed before you confirm.</li>
+                                                <li>There are no hidden charges — Paylio always shows fees upfront before sending.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingSending-moneySeven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSending-moneySeven"
+                                            aria-expanded="false" aria-controls="collapseSending-moneySeven">
+                                            How long does it take for the recipient to get the money?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseSending-moneySeven" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSending-moneySeven" data-bs-parent="#accordionSending-money">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Most transfers are instant if both users have verified Paylio wallets.</li>
+                                                <li>Bank-linked or international transfers may take 1–2 business days depending on the destination.</li>
+                                                <li>You can track the delivery status from your transaction history at any time.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="account-mangament" role="tabpanel" aria-labelledby="account-mangament-tab">
+                            <h4 class="title">Wallet Management</h4>
+                            <div class="accordion" id="accordionAccount-mangament">
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAccount-mangamentOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentOne"
+                                            aria-expanded="false" aria-controls="collapseAccount-mangamentOne">
+                                            How do I update my account information?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAccount-mangamentOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAccount-mangamentOne" data-bs-parent="#accordionAccount-mangament">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Go to the ‘Settings’ tab within your Paylio dashboard.</li>
+                                                <li>Select ‘Profile’ or ‘Account Info’ to edit details like your name, phone number, or email address.</li>
+                                                <li>For security reasons, some changes may require OTP or ID verification.</li>
+                                                <li>Click ‘Save’ once the update is complete and confirmed.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAccount-mangamentTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentTwo"
+                                            aria-expanded="false" aria-controls="collapseAccount-mangamentTwo">
+                                            Can I change my wallet currency?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAccount-mangamentTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAccount-mangamentTwo" data-bs-parent="#accordionAccount-mangament">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Currently, your default wallet currency is set based on your region at the time of registration.</li>
+                                                <li>If you need to change it, contact our support team with a valid reason and documentation if required.</li>
+                                                <li>We plan to roll out multi-currency wallets in a future release.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAccount-mangamentThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentThree"
+                                            aria-expanded="false" aria-controls="collapseAccount-mangamentThree">
+                                            How do I close or deactivate my account?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAccount-mangamentThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAccount-mangamentThree" data-bs-parent="#accordionAccount-mangament">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Visit ‘Settings’ and scroll down to the ‘Close Account’ section.</li>
+                                                <li>You’ll be prompted to enter a reason and confirm your decision.</li>
+                                                <li>Ensure your wallet balance is zero and there are no pending transactions.</li>
+                                                <li>Your account will be permanently deleted after confirmation, and data will be removed in line with our privacy policy.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAccount-mangamentFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentFour"
+                                            aria-expanded="false" aria-controls="collapseAccount-mangamentFour">
+                                            How can I reset my Paylio login password?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAccount-mangamentFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAccount-mangamentFour" data-bs-parent="#accordionAccount-mangament">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Click "Forgot password?" on the login screen.</li>
+                                                <li>Enter your registered email or phone number to receive a reset link or OTP.</li>
+                                                <li>Follow the instructions to set a new secure password.</li>
+                                                <li>If you're logged in, you can also change your password in Settings > Security.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAccount-mangamentFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentFive"
+                                            aria-expanded="false" aria-controls="collapseAccount-mangamentFive">
+                                            How do I link or unlink a bank account?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAccount-mangamentFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAccount-mangamentFive" data-bs-parent="#accordionAccount-mangament">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Navigate to the 'Bank Accounts' section from the main dashboard or settings.</li>
+                                                <li>To link, click ‘Add Bank’, enter your bank details, and verify with an OTP or bank login.</li>
+                                                <li>To unlink, select the bank account and tap ‘Remove’ — verification may be required.</li>
+                                                <li>Note: Removing a bank account disables automatic transfers or debits from that account.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAccount-mangamentSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentSix"
+                                            aria-expanded="false" aria-controls="collapseAccount-mangamentSix">
+                                            What should I do if I suspect unauthorized activity?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAccount-mangamentSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAccount-mangamentSix" data-bs-parent="#accordionAccount-mangament">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Immediately freeze your wallet by going to Settings > Security > Freeze Account.</li>
+                                                <li>Change your password and enable two-factor authentication (2FA) if not already active.</li>
+                                                <li>Contact Paylio Support through the in-app help center to report the issue.</li>
+                                                <li>We’ll investigate and assist you in securing your funds and account access.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header" id="headingAccount-mangamentSeven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAccount-mangamentSeven"
+                                            aria-expanded="false" aria-controls="collapseAccount-mangamentSeven">
+                                            Can I access my Paylio account from multiple devices?
+                                        </button>
+                                    </h6>
+                                    <div id="collapseAccount-mangamentSeven" class="accordion-collapse collapse"
+                                        aria-labelledby="headingAccount-mangamentSeven" data-bs-parent="#accordionAccount-mangament">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Yes, Paylio can be accessed securely from multiple devices (phone, tablet, or web).</li>
+                                                <li>Each new login requires verification via OTP or biometrics depending on your settings.</li>
+                                                <li>You can view and manage active sessions from Settings > Device Activity.</li>
+                                                <li>To remove a device, simply log out remotely from the list or contact support if needed.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    <div class="tab-pane fade" id="adding-recipient" role="tabpanel" aria-labelledby="adding-recipient-tab">
+                        <h4 class="title">Adding Recipient</h4>
+                        <div class="accordion" id="accordionAdding-recipient">
+
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingAdding-recipientOne">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientOne"
+                                        aria-expanded="false" aria-controls="collapseAdding-recipientOne">
+                                        How do I add a recipient to my Paylio account?
+                                    </button>
+                                </h6>
+                                <div id="collapseAdding-recipientOne" class="accordion-collapse collapse"
+                                    aria-labelledby="headingAdding-recipientOne" data-bs-parent="#accordionAdding-recipient">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Log in to your Paylio account and go to the "Recipients" tab.</li>
+                                            <li>Click "Add Recipient" and enter the recipient’s full name, email, or wallet ID.</li>
+                                            <li>You can also add a mobile number if supported in your region.</li>
+                                            <li>Save the recipient to your list for quicker transactions in the future.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingAdding-recipientTwo">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientTwo"
+                                        aria-expanded="false" aria-controls="collapseAdding-recipientTwo">
+                                        Can I save multiple recipients in my Paylio account?
+                                    </button>
+                                </h6>
+                                <div id="collapseAdding-recipientTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="headingAdding-recipientTwo" data-bs-parent="#accordionAdding-recipient">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Yes, you can add and save as many recipients as needed.</li>
+                                            <li>Each recipient can be tagged or grouped (e.g., “Friends”, “Vendors”, “Team”).</li>
+                                            <li>Use the search bar in the Recipients tab to quickly find a contact before sending money.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingAdding-recipientThree">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientThree"
+                                        aria-expanded="false" aria-controls="collapseAdding-recipientThree">
+                                        What details are required to add a new recipient?
+                                    </button>
+                                </h6>
+                                <div id="collapseAdding-recipientThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingAdding-recipientThree" data-bs-parent="#accordionAdding-recipient">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>At minimum, the recipient’s name and either their email, wallet ID, or phone number.</li>
+                                            <li>Bank account details (like IBAN or account number) are needed if you’re sending directly to a bank.</li>
+                                            <li>For international recipients, ensure you select the correct country and currency for the transfer.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingAdding-recipientFour">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientFour"
+                                        aria-expanded="false" aria-controls="collapseAdding-recipientFour">
+                                        Can I edit or remove a recipient later?
+                                    </button>
+                                </h6>
+                                <div id="collapseAdding-recipientFour" class="accordion-collapse collapse"
+                                    aria-labelledby="headingAdding-recipientFour" data-bs-parent="#accordionAdding-recipient">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Yes, head to your saved recipients list.</li>
+                                            <li>Select the recipient you want to edit or remove.</li>
+                                            <li>Click "Edit" to change any details or "Delete" to remove the recipient completely.</li>
+                                            <li>Note: You cannot delete a recipient involved in a pending transaction.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingAdding-recipientFive">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientFive"
+                                        aria-expanded="false" aria-controls="collapseAdding-recipientFive">
+                                        Can I add international recipients?
+                                    </button>
+                                </h6>
+                                <div id="collapseAdding-recipientFive" class="accordion-collapse collapse"
+                                    aria-labelledby="headingAdding-recipientFive" data-bs-parent="#accordionAdding-recipient">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Yes, Paylio supports sending to international recipients in supported countries.</li>
+                                            <li>When adding a recipient, choose the country and ensure you input correct international banking details (like SWIFT code).</li>
+                                            <li>Some transfers may take longer due to currency conversion or compliance checks.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingAdding-recipientSix">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientSix"
+                                        aria-expanded="false" aria-controls="collapseAdding-recipientSix">
+                                        Will recipients be notified when I add them?
+                                    </button>
+                                </h6>
+                                <div id="collapseAdding-recipientSix" class="accordion-collapse collapse"
+                                    aria-labelledby="headingAdding-recipientSix" data-bs-parent="#accordionAdding-recipient">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>No. Adding a recipient to your account does not notify them automatically.</li>
+                                            <li>They are only notified when you initiate a transaction to their wallet, email, or bank account.</li>
+                                            <li>This ensures your address book is private until you're ready to send funds.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h6 class="accordion-header" id="headingAdding-recipientSeven">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseAdding-recipientSeven"
+                                        aria-expanded="false" aria-controls="collapseAdding-recipientSeven">
+                                        What happens if I enter incorrect recipient information?
+                                    </button>
+                                </h6>
+                                <div id="collapseAdding-recipientSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingAdding-recipientSeven" data-bs-parent="#accordionAdding-recipient">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>If no money has been sent, simply delete or correct the information.</li>
+                                            <li>If a transfer has already been made to an incorrect recipient, contact Paylio support immediately for assistance.</li>
+                                            <li>We’ll attempt to recover the funds, but successful recovery depends on recipient action and timing.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>          
+
                         </div>
                     </div>
                 </div>
@@ -1626,7 +1263,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>
@@ -1638,7 +1275,7 @@
                         <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start">
                             <div class="menu-item">
                                 <ul class="footer-link d-flex align-items-center">
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li><a href="help-center.html">Support</a></li>
                                     <li><a href="fees.html">Fees</a></li>
                                 </ul>

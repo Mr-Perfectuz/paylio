@@ -38,7 +38,7 @@
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="/">
-                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -76,7 +76,7 @@
                                     <a class="nav-link dropdown-toggle" href="javascript:void(0)"
                                         data-bs-toggle="dropdown" data-bs-auto-close="outside">Company</a>
                                     <ul class="dropdown-menu main-menu shadow">
-                                        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                                        <li><a class="nav-link" href="/about">About Us</a></li>
                                         <li><a class="nav-link" href="career.html">Career</a></li>
                                         <li><a class="nav-link" href="career-details.html">Career Details</a></li>
                                         <li class="dropend sub-navbar">
@@ -100,9 +100,9 @@
                                 </li>
                             </ul>
                             <div class="right-area header-action d-flex align-items-center max-un">
-                                <a href="login.html" class="login">Login</a>
-                                <a href="sign-up.html" class="cmn-btn">Sign Up
-                                    <i class="icon-d-right-arrow-2"></i>
+                                <a href="/user/sign-in" class="login">Login</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign Up
+                                    <i class=" "></i>
                                 </a>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                                 </div>
                                 <form action="#">
                                     <div class="form-group mb-40 d-flex align-items-center">
-                                        <img src="assets/images/icon/search-icon.png" alt="icon">
+                                        <img src="{% static 'assets/images/icon/search-icon.png' %}" alt="icon">
                                         <input type="text" placeholder="Search Knowledge base">
                                     </div>
                                 </form>
@@ -163,7 +163,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-1.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-1.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>About Paylio</h5></a>
                                         </div>
@@ -171,7 +171,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-2.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-2.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Wallet Creation</h5></a>
                                         </div>
@@ -179,7 +179,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-3.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-3.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Adding Money</h5></a>
                                         </div>
@@ -187,7 +187,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-4.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-4.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Paylio Cards</h5></a>
                                         </div>
@@ -195,7 +195,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-5.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-5.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Sending Money</h5></a>
                                         </div>
@@ -203,7 +203,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-6.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-6.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Account Mangament</h5></a>
                                         </div>
@@ -211,7 +211,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-7.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-7.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Adding Recipient</h5></a>
                                         </div>
@@ -223,7 +223,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-1.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-1.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>About Paylio</h5></a>
                                         </div>
@@ -231,7 +231,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/business-icon-1.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/business-icon-1.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Accepting Payments</h5></a>
                                         </div>
@@ -239,7 +239,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/business-icon-2.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/business-icon-2.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Adding Money</h5></a>
                                         </div>
@@ -247,7 +247,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/business-icon-3.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/business-icon-3.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Transactions</h5></a>
                                         </div>
@@ -255,7 +255,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/business-icon-4.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/business-icon-4.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Deposits</h5></a>
                                         </div>
@@ -263,7 +263,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-2.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-2.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Wallet</h5></a>
                                         </div>
@@ -271,7 +271,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-1.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-1.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Refund</h5></a>
                                         </div>
@@ -279,7 +279,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/personal-icon-4.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/personal-icon-4.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Paylio Cards</h5></a>
                                         </div>
@@ -287,7 +287,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/business-icon-5.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/business-icon-5.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Designated Bank Acc</h5></a>
                                         </div>
@@ -295,7 +295,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/business-icon-6.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/business-icon-6.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Payment Gateway</h5></a>
                                         </div>
@@ -303,7 +303,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/business-icon-7.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/business-icon-7.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>3D Secure Auth.</h5></a>
                                         </div>
@@ -311,7 +311,7 @@
                                     <div class="col-xl-3 col-lg-4 col-sm-6 col-9">
                                         <div class="single-box">
                                             <div class="img-area">
-                                                <img src="assets/images/icon/business-icon-8.png" alt="icon">
+                                                <img src="{% static 'assets/images/icon/business-icon-8.png' %}" alt="icon">
                                             </div>
                                             <a href="help-center-category.html"><h5>Fees and Allowance</h5></a>
                                         </div>
@@ -353,7 +353,7 @@
                                 <div id="collapseLeftOne" class="accordion-collapse collapse"
                                     aria-labelledby="headingLeftOne" data-bs-parent="#accordionLeft">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                    <p>To send money with Paylio, log in to your dashboard, choose 'Send Money', enter the recipient’s details, amount, and confirm the transaction. It’s fast, secure, and works worldwide.</p>
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +368,7 @@
                                 <div id="collapseLeftTwo" class="accordion-collapse collapse"
                                     aria-labelledby="headingLeftTwo" data-bs-parent="#accordionLeft">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                    <p>Paylio keeps fees transparent and minimal. Domestic transfers are usually free, while international transfers may include a small processing fee, clearly shown before confirmation.</p>
                                     </div>
                                 </div>
                             </div>
@@ -383,7 +383,7 @@
                                 <div id="collapseLeftThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingLeftThree" data-bs-parent="#accordionLeft">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                    <p>The fastest way is through Paylio’s Express Transfer option, which delivers funds to supported countries within minutes. Standard transfers typically complete within 1–2 business days.</p>
                                     </div>
                                 </div>
                             </div>
@@ -398,7 +398,7 @@
                                 <div id="collapseLeftFour" class="accordion-collapse collapse"
                                     aria-labelledby="headingLeftFour" data-bs-parent="#accordionLeft">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                    <p>Create an account, verify your identity, and connect a payment method. From there, you can send, receive, request funds, and manage transactions—all from your Paylio dashboard or app.</p>
                                     </div>
                                 </div>
                             </div>
@@ -413,7 +413,7 @@
                                 <div id="collapseLeftFive" class="accordion-collapse collapse"
                                     aria-labelledby="headingLeftFive" data-bs-parent="#accordionLeft">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                        <p>Paylio uses advanced encryption, fraud monitoring, and secure APIs to protect your funds and data. All transactions are monitored 24/7 to ensure your money stays safe at every step.</p>
                                     </div>
                                 </div>
                             </div>
@@ -432,7 +432,7 @@
                                 <div id="collapseRightOne" class="accordion-collapse collapse"
                                     aria-labelledby="headingRightOne" data-bs-parent="#accordionRight">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                    <p>Yes, if you choose the right one. Paylio is fully compliant with industry security standards and uses multi-layer authentication to ensure your data and funds are protected.</p>
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +447,7 @@
                                 <div id="collapseRightTwo" class="accordion-collapse collapse"
                                     aria-labelledby="headingRightTwo" data-bs-parent="#accordionRight">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                    <p>Transfer limits depend on your account verification level. Verified users can send up to $10,000 per transaction, with higher limits available for business accounts.</p>
                                     </div>
                                 </div>
                             </div>
@@ -461,8 +461,8 @@
                                 </h6>
                                 <div id="collapseRightThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingRightThree" data-bs-parent="#accordionRight">
-                                    <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                    <div class="accordion-body">    
+                                        <p>Paylio supports major global currencies including USD, EUR, AUS, and more. Currency availability may vary based on the recipient's country.</p>
                                     </div>
                                 </div>
                             </div>
@@ -477,7 +477,7 @@
                                 <div id="collapseRightFour" class="accordion-collapse collapse"
                                     aria-labelledby="headingRightFour" data-bs-parent="#accordionRight">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                        <p>You can cancel a transaction as long as it hasn’t been processed. Go to your transaction history, select the payment, and click 'Cancel'. If it's already processed, you'll need to request a refund from the recipient.</p>
                                     </div>
                                 </div>
                             </div>
@@ -492,7 +492,7 @@
                                 <div id="collapseRightFive" class="accordion-collapse collapse"
                                     aria-labelledby="headingRightFive" data-bs-parent="#accordionRight">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio feugiat tellus elit massa sed ullamcorper a in.</p>
+                                        <p>Absolutely. Use our bulk payment feature to upload a CSV file or use the API for high-volume transfers—ideal for payroll, vendors, or recurring payouts.</p>
                                     </div>
                                 </div>
                             </div>
@@ -536,7 +536,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>
@@ -548,7 +548,7 @@
                         <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start">
                             <div class="menu-item">
                                 <ul class="footer-link d-flex align-items-center">
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li><a href="help-center.html">Support</a></li>
                                     <li><a href="fees.html">Fees</a></li>
                                 </ul>

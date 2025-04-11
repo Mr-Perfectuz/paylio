@@ -38,7 +38,7 @@
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="/">
-                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -76,7 +76,7 @@
                                     <a class="nav-link dropdown-toggle" href="javascript:void(0)"
                                         data-bs-toggle="dropdown" data-bs-auto-close="outside">Company</a>
                                     <ul class="dropdown-menu main-menu shadow">
-                                        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                                        <li><a class="nav-link" href="/about">About Us</a></li>
                                         <li><a class="nav-link" href="career.html">Career</a></li>
                                         <li><a class="nav-link" href="career-details.html">Career Details</a></li>
                                         <li class="dropend sub-navbar">
@@ -100,9 +100,9 @@
                                 </li>
                             </ul>
                             <div class="right-area header-action d-flex align-items-center max-un">
-                                <a href="login.html" class="login">Login</a>
-                                <a href="sign-up.html" class="cmn-btn">Sign Up
-                                    <i class="icon-d-right-arrow-2"></i>
+                                <a href="/user/sign-in" class="login">Login</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign Up
+                                    <i class=""></i>
                                 </a>
                             </div>
                         </div>
@@ -127,8 +127,8 @@
                                     <p class="xlr">The card that saves you time and your business money. Track spend in real-time and earn cashback on digital spend.</p>
                                 </div>
                                 <div class="bottom-area d-xxl-flex">
-                                    <a href="sign-up.html" class="cmn-btn">Open a Free Account</a>
-                                    <a class="cmn-btn active mfp-iframe popupvideo" href="https://www.youtube.com/watch?v=Djz8Nc0Qxwk">See How it Works</a>
+                                    <a href="/user/sign-up" class="cmn-btn">Open a Free Account</a>
+                                    <a class="cmn-btn active" href="/about">See How it Works</a>
                                 </div>
                             </div>
                         </div>
@@ -155,21 +155,21 @@
                 <div class="row cus-mar">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-item">
-                            <img src="assets/images/icon/features-corporate-icon-1.png" alt="icon">
+                            <img src="{% static 'assets/images/icon/features-corporate-icon-1.png' %}" alt="icon">
                             <h5>Earn Cashback</h5>
                             <p>The banks don't reward you like this. Earn 1% cashback..</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-item">
-                            <img src="assets/images/icon/features-corporate-icon-2.png" alt="icon">
+                            <img src="{% static 'assets/images/icon/features-corporate-icon-2.png' %}" alt="icon">
                             <h5>Track Spending</h5>
                             <p>Get real-time notifications at your fingertips. Set budgets to avoid..</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-item">
-                            <img src="assets/images/icon/features-corporate-icon-3.png" alt="icon">
+                            <img src="{% static 'assets/images/icon/features-corporate-icon-3.png'%}" alt="icon">
                             <h5>Completely Free</h5>
                             <p>No sign up, annual, or hidden fees. Get started in 5 minutes</p>
                         </div>
@@ -192,12 +192,12 @@
                             <p>Spend at the visa rate, with a low transparent fee. Easy, fast, transparent. Aspire gives over 10,000 business owners their money and time back.</p>
                         </div>
                         <div class="btn-area">
-                            <a href="sign-up.html" class="cmn-btn">Open Account</a>
+                            <a href="/user/sign-up" class="cmn-btn">Open Account</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="sec-image">
-                            <img src="assets/images/multi-currency-img.png" alt="image" class="max-un">
+                            <img src="{% static 'assets/images/multi-currency-img.png' %}" alt="image" class="max-un">
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-5 order-md-0 order-1">
                         <div class="sec-image d-rtl">
-                            <img src="assets/images/earn-cashback-image.png" alt="image" class="max-un">
+                            <img src=" {% static 'assets/images/earn-cashback-image.png' %}" alt="image" class="max-un">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -223,7 +223,7 @@
                             <p>Earn 1% cashback on digital marketing and SaaS spend with the biggest names in business tech.</p>
                         </div>
                         <div class="btn-area">
-                            <a href="sign-up.html" class="cmn-btn">Open Account</a>
+                            <a href="/user/sign-up" class="cmn-btn">Open Account</a>
                         </div>
                     </div>
                 </div>
@@ -245,26 +245,25 @@
                         </div>
                         <ul>
                             <li>
-                                <img src="assets/images/icon/stay-control-icon-1.png" alt="image">
-                                <p>Freeze Card</p>
+                                <img src="{% static 'assets/images/icon/stay-control-icon-1.png' %}" alt="image">
                             </li>
                             <li>
-                                <img src="assets/images/icon/stay-control-icon-2.png" alt="image">
+                                <img src="{% static 'assets/images/icon/stay-control-icon-2.png' %}" alt="image">
                                 <p>Set Spend Limit</p>
                             </li>
                             <li>
-                                <img src="assets/images/icon/stay-control-icon-3.png" alt="image">
+                                <img src="{% static 'assets/images/icon/stay-control-icon-3.png' %}" alt="image">
                                 <p>Replace Card</p>
                             </li>
                             <li>
-                                <img src="assets/images/icon/stay-control-icon-4.png" alt="image">
+                                <img src="{% static 'assets/images/icon/stay-control-icon-4.png' %}" alt="image">
                                 <p>Cancel Card</p>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <div class="sec-image">
-                            <img src="assets/images/stay-control-image.png" alt="image" class="max-un">
+                            <img src="{% static 'assets/images/stay-control-image.png' %}" alt="image" class="max-un">
                         </div>
                     </div>
                 </div>
@@ -280,7 +279,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-5 order-md-0 order-1">
                         <div class="sec-image d-rtl">
-                            <img src="assets/images/secure-integrated-illu.png" alt="image" class="max-un">
+                            <img src="{% static 'assets/images/secure-integrated-illu.png' %}" alt="image" class="max-un">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -292,19 +291,19 @@
                         <div class="section-bottom">
                             <ul>
                                 <li>
-                                    <img src="assets/images/icon/check-3.png" alt="icon">
+                                    <img src="{% static 'assets/images/icon/check-3.png' %}" alt="icon">
                                     Temporarily freeze missing cards in your app or web dashboard
                                 </li>
                                 <li>
-                                    <img src="assets/images/icon/check-3.png" alt="icon">
+                                    <img src="{% static 'assets/images/icon/check-3.png' %}" alt="icon">
                                     Enable location-based security to reduce fraudulent transactions
                                 </li>
                                 <li>
-                                    <img src="assets/images/icon/check-3.png" alt="icon">
+                                    <img src="{% static 'assets/images/icon/check-3.png' %}" alt="icon">
                                     Disable contactless, online or swipe payments when necessary to ensure your card’s safety
                                 </li>
                                 <li>
-                                    <img src="assets/images/icon/check-3.png" alt="icon">
+                                    <img src="{% static 'assets/images/icon/check-3.png' %}" alt="icon">
                                     Toggle the ability to make cash withdrawals from ATMs for extra security
                                 </li>
                             </ul>
@@ -437,7 +436,7 @@
                             <p>No-fuss company cards for team members, instant virtual cards for security and flexibility — all set up with our easy expense management</p>
                         </div>
                         <div class="btn-area">
-                            <a href="sign-up.html" class="cmn-btn">Sign up in minutes</a>
+                            <a href="/user/sign-up" class="cmn-btn">Sign up in minutes</a>
                             <a href="help-center.html" class="cmn-btn active">Talk to an expert</a>
                         </div>
                     </div>
@@ -459,7 +458,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>
@@ -471,7 +470,7 @@
                         <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start">
                             <div class="menu-item">
                                 <ul class="footer-link d-flex align-items-center">
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li><a href="help-center.html">Support</a></li>
                                     <li><a href="fees.html">Fees</a></li>
                                 </ul>
