@@ -38,7 +38,7 @@
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
                          <a class="navbar-brand" href="/">
-                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -100,9 +100,9 @@
                                 </li>
                             </ul>
                             <div class="right-area header-action d-flex align-items-center max-un">
-                                <a href="login.html" class="login">Login</a>
-                                <a href="sign-up.html" class="cmn-btn">Sign Up
-                                    <i class="icon-d-right-arrow-2"></i>
+                                <a href="/user/sign-in" class="login">Login</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign Up
+                                    <i class=" "></i>
                                 </a>
                             </div>
                         </div>
@@ -117,8 +117,8 @@
     <section class="banner-section invoice-management rewards">
         <div class="overlay">
             <div class="shape-area">
-                <img src="assets/images/rewards-banner-1.png" class="obj-1" alt="icon">
-                <img src="assets/images/rewards-banner-2.png" class="obj-2" alt="icon">
+                <img src="{% static 'assets/images/rewards-banner-1.png' %}" class="obj-1" alt="icon">
+                <img src="{% static 'assets/images/rewards-banner-2.png' %}" class="obj-2" alt="icon">
             </div>
             <div class="banner-content">
                 <div class="container wow fadeInUp">
@@ -131,7 +131,7 @@
                                     <p>Open an Paylio account and gain access to over S$50,000 worth of exclusive benefits from our platform partners.</p>
                                 </div>
                                 <div class="btn-area">
-                                    <a href="sign-up.html" class="cmn-btn">Get Started</a>
+                                     <a href="/user/sign-up" class="cmn-btn">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +241,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-4.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-4.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Google Ads</h5>
@@ -260,7 +260,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-5.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-5.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Freshworks</h5>
@@ -279,7 +279,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-1.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-1.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Workspace</h5>
@@ -298,7 +298,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-2.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>AWs</h5>
@@ -317,7 +317,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-3.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-3.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -336,7 +336,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-6.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-6.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -355,7 +355,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-7.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-7.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Shopify</h5>
@@ -374,7 +374,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-8.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-8.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Dropbox</h5>
@@ -393,7 +393,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-9.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-9.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>BambooHR</h5>
@@ -416,7 +416,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-6.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-6.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -435,7 +435,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-7.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-7.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Shopify</h5>
@@ -454,7 +454,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-4.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-4.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Google Ads</h5>
@@ -473,7 +473,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-5.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-5.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Freshworks</h5>
@@ -492,7 +492,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-1.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-1.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Workspace</h5>
@@ -511,7 +511,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-2.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>AWs</h5>
@@ -530,7 +530,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-3.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-3.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -549,7 +549,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-8.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-8.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Dropbox</h5>
@@ -568,7 +568,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-9.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-9.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>BambooHR</h5>
@@ -591,7 +591,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-1.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-1.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Workspace</h5>
@@ -610,7 +610,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-2.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>AWs</h5>
@@ -629,7 +629,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-4.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-4.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Google Ads</h5>
@@ -648,7 +648,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-5.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-5.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Freshworks</h5>
@@ -667,7 +667,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-3.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-3.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -686,7 +686,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-6.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-6.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -705,7 +705,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-7.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-7.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Shopify</h5>
@@ -724,7 +724,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-8.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-8.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Dropbox</h5>
@@ -743,7 +743,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-9.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-9.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>BambooHR</h5>
@@ -766,7 +766,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-1.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-1.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Workspace</h5>
@@ -785,7 +785,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-2.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>AWs</h5>
@@ -804,7 +804,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-4.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-4.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Google Ads</h5>
@@ -823,7 +823,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-5.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-5.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Freshworks</h5>
@@ -842,7 +842,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-3.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-3.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -861,7 +861,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-6.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-6.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -880,7 +880,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-7.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-7.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Shopify</h5>
@@ -899,7 +899,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-8.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-8.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Dropbox</h5>
@@ -918,7 +918,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-9.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-9.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>BambooHR</h5>
@@ -941,7 +941,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-8.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-8.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Dropbox</h5>
@@ -960,7 +960,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-9.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-9.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>BambooHR</h5>
@@ -979,7 +979,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-4.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-4.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Google Ads</h5>
@@ -998,7 +998,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-5.png" alt="image">
+                                                    <img src="assets/images/icon/partner-logo-5.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Freshworks</h5>
@@ -1017,7 +1017,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-1.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-1.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Workspace</h5>
@@ -1036,7 +1036,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-2.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>AWs</h5>
@@ -1055,7 +1055,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-3.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-3.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -1074,7 +1074,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-6.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-6.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -1093,7 +1093,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-7.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-7.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Shopify</h5>
@@ -1116,7 +1116,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-7.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-7.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Shopify</h5>
@@ -1135,7 +1135,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-8.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-8.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Dropbox</h5>
@@ -1154,7 +1154,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-4.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-4.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Google Ads</h5>
@@ -1173,7 +1173,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-5.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-5.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Freshworks</h5>
@@ -1192,7 +1192,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-1.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-1.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Workspace</h5>
@@ -1211,7 +1211,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-2.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>AWs</h5>
@@ -1230,7 +1230,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-3.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-3.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -1249,7 +1249,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-6.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-6.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -1268,7 +1268,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-9.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-9.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>BambooHR</h5>
@@ -1291,7 +1291,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-1.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-1.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Workspace</h5>
@@ -1310,7 +1310,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-4.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-4.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Google Ads</h5>
@@ -1329,7 +1329,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-5.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-5.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Freshworks</h5>
@@ -1348,7 +1348,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-2.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-2.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>AWs</h5>
@@ -1367,7 +1367,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-3.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-3.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -1386,7 +1386,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-6.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-6.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Stripe</h5>
@@ -1405,7 +1405,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-7.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-7.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Shopify</h5>
@@ -1424,7 +1424,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-8.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-8.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>Dropbox</h5>
@@ -1443,7 +1443,7 @@
                                         <div class="single-box">
                                             <div class="head-area d-flex align-items-center">
                                                 <div class="logo-area">
-                                                    <img src="assets/images/icon/partner-logo-9.png" alt="image">
+                                                    <img src="{% static 'assets/images/icon/partner-logo-9.png' %}" alt="image">
                                                 </div>
                                                 <div class="text-area">
                                                     <h5>BambooHR</h5>
@@ -1480,7 +1480,7 @@
                                 <p>East, fast, transparent. Paylio gives over 10,000 business owners their money and time back.</p>
                             </div>
                             <div class="btn-area text-center">
-                                <a href="sign-up.html" class="cmn-btn">Sign up in minutes</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign up in minutes</a>
                             </div>
                         </div>
                     </div>
@@ -1502,7 +1502,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>

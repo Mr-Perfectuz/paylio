@@ -39,7 +39,7 @@
                 <div class="row d-flex header-area">
                     <nav class="navbar navbar-expand-lg navbar-light">
                          <a class="navbar-brand" href="/">
-                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" class="logo" alt="logo">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -101,9 +101,9 @@
                                 </li>
                             </ul>
                             <div class="right-area header-action d-flex align-items-center max-un">
-                                <a href="login.html" class="login">Login</a>
-                                <a href="sign-up.html" class="cmn-btn">Sign Up
-                                    <i class="icon-d-right-arrow-2"></i>
+                                <a href="/user/sign-in" class="login">Login</a>
+                                <a href="/user/sign-up" class="cmn-btn">Sign Up
+                                    <i class=" "></i>
                                 </a>
                             </div>
                         </div>
@@ -118,9 +118,9 @@
     <section class="banner-section invoice-management">
         <div class="overlay">
             <div class="shape-area">
-                <img src="assets/images/icon/invoice-icon-1.png" class="shape-1" alt="icon">
-                <img src="assets/images/icon/invoice-icon-2.png" class="shape-2" alt="icon">
-                <img src="assets/images/icon/invoice-icon-3.png" class="shape-3" alt="icon">
+                <img src="{% static 'assets/images/icon/invoice-icon-1.png' %}" class="shape-1" alt="icon">
+                <img src="{% static 'assets/images/icon/invoice-icon-2.png' %}" class="shape-2" alt="icon">
+                <img src="{% static 'assets/images/icon/invoice-icon-3.png' %}" class="shape-3" alt="icon">
             </div>
             <div class="banner-content">
                 <div class="container wow fadeInUp">
@@ -133,7 +133,7 @@
                                     <p>Create, send & manage invoices effortlessly. Unleash the power of an integrated finance stack with Invoicing and the Paylio business account.</p>
                                 </div>
                                 <div class="btn-area">
-                                    <a href="sign-up.html" class="cmn-btn">Get Started</a>
+                                     <a href="/user/sign-up" class="cmn-btn">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -158,14 +158,14 @@
                     </div>
                     <div class="col-md-6">
                         <div class="sec-image">
-                            <img src="assets/images/invoice-features-1.png" alt="image" class="w-100">
+                            <img src="{% static 'assets/images/invoice-features-1.png' %}" alt="image" class="w-100">
                         </div>
                     </div>
                 </div>
                 <div class="row pb-120 align-items-center justify-content-between">
                     <div class="col-md-6 order-md-0 order-1">
                         <div class="sec-image">
-                            <img src="assets/images/invoice-features-2.png" alt="image" class="w-100">
+                            <img src="{% static 'assets/images/invoice-features-2.png' %}" alt="image" class="w-100">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -186,14 +186,14 @@
                     </div>
                     <div class="col-md-6">
                         <div class="sec-image">
-                            <img src="assets/images/invoice-features-3.png" alt="image" class="w-100">
+                            <img src="{% static 'assets/images/invoice-features-3.png' %}" alt="image" class="w-100">
                         </div>
                     </div>
                 </div>
                 <div class="row pb-120 align-items-center justify-content-between">
                     <div class="col-md-6 order-md-0 order-1">
                         <div class="sec-image">
-                            <img src="assets/images/invoice-features-4.png" alt="image" class="w-100">
+                            <img src="{% static 'assets/images/invoice-features-4.png' %}" alt="image" class="w-100">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -214,7 +214,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="sec-image ex-mar">
-                            <img src="assets/images/invoice-features-5.png" alt="image" class="w-100">
+                            <img src="{% static 'assets/images/invoice-features-5.png' %}" alt="image" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -235,14 +235,14 @@
                             <p>We make integrating with the most popular e-commerce platforms seamless. Customise, or enjoy out-of-the-box features.</p>
                         </div>
                         <div class="btn-area">
-                            <a href="sign-up.html" class="cmn-btn">Open a Free Account</a>
+                            <a href="/user/sign-up" class="cmn-btn">Open a Free Account</a>
                             <a href="help-center.html" class="cmn-btn active">Talk to an expert</a>
                         </div>
                         <ul class="mt-60">
-                            <li><img src="assets/images/icon/aws.png" alt="icon"></li>
-                            <li><img src="assets/images/icon/shopify.png" alt="icon"></li>
-                            <li><img src="assets/images/icon/magento.png" alt="icon"></li>
-                            <li><img src="assets/images/icon/xero.png" alt="icon"></li>
+                            <li><img src="{% static 'assets/images/icon/aws.png' %}" alt="icon"></li>
+                            <li><img src="{% static 'assets/images/icon/shopify.png' %}" alt="icon"></li>
+                            <li><img src="{% static 'assets/images/icon/magento.png' %}" alt="icon"></li>
+                            <li><img src="{% static 'assets/images/icon/xero.png' %}" alt="icon"></li>
                         </ul>
                     </div>
                 </div>
@@ -263,7 +263,7 @@
                             <p>No-fuss company cards for team members, instant virtual cards for security and flexibility — all set up with our easy expense management</p>
                         </div>
                         <div class="btn-area">
-                            <a href="sign-up.html" class="cmn-btn">Sign up in minutes</a>
+                            <a href="/user/sign-up" class="cmn-btn">Sign up in minutes</a>
                             <a href="help-center.html" class="cmn-btn active">Talk to an expert</a>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                         <form action="#">
                             <div class="form-group d-flex align-items-center">
                                 <input type="text" placeholder="Your Email Address">
-                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                                <button><img src="{% static 'assets/images/icon/arrow-right-2.png' %}" alt="icon"></button>
                             </div>
                         </form>
                     </div>
