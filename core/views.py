@@ -48,9 +48,9 @@ def error(request):
     return render(request, "company/error.html")
 #help
 def help_center(request):
-    return render(request, "company/help-center.html")
+    return render(request, "help/help-center.html")
 def help_center_category(request):
-    return render(request, "company/help-center-category.html")
+    return render(request, "help/help-center-category.html")
 
 #core
 def contact(request):
