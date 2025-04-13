@@ -66,7 +66,7 @@ def money_exchange(request):
 def recipients(request):
     return render(request, "dashboard/recipients.html")
 def withdraw_money(request):
-    return render(request, "dashboard/withdraw-money-step-1.html")
+    return render(request, "company/error.html")
 
 class AdminLogoutView(View):
     @method_decorator(csrf_exempt)

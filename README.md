@@ -94,7 +94,7 @@ whitenoise==6.9.0
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/paylio.git
+   git clone https://github.com/Mr-Perfectuz/paylio.git
    cd paylio
    ```
 
@@ -126,6 +126,11 @@ whitenoise==6.9.0
 
 ### ▶ Dashboard
 - Account
+<p align="center">
+    <a href="">
+        <img src="public/account_main.png" alt="Paylio Homepage">
+    </a>    
+</p>
 - Transactions
 - Receive
 - Exchange
@@ -207,4 +212,4 @@ We welcome contributions from developers, designers, and testers to improve Payl
 
 ---
 
-> Made with ❤️ by the Paylio Team
+> Made with ❤️ by the Avnvarbek
