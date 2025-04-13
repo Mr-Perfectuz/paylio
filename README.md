@@ -125,50 +125,208 @@ whitenoise==6.9.0
 ## 🏎️ Pages
 
 ### ▶ Dashboard
+<p align="center">
+    <a href="">
+        <img src="public/account.png" alt="Paylio Homepage">
+    </a>    
+</p>
 - Account
 <p align="center">
     <a href="">
         <img src="public/account_main.png" alt="Paylio Homepage">
+        <img src="public/notification.png" alt="Paylio Homepage">
+        <img src="public/language.png" alt="Paylio Homepage">
     </a>    
 </p>
 - Transactions
+<p align="center">
+    <a href="">
+        <img src="public/transactions.png" alt="Paylio Homepage">
+    </a>    
+</p>
 - Receive
-- Exchange
-- Recipients
-- Crypto
-- Deposit Money
-- Withdraw Money
-- Support
-- Quit
+<p align="center">
+    <a href="">
+        <img src="public/sent.png" alt="Paylio Homepage">
+    </a>    
+</p>
+
+- Payments
+<p align="center">
+    <a href="">
+         <img src="public/payments.png" alt="Paylio Homepage">
+    </a>    
+</p>
+- Card
+<p align="center">
+    <a href="">
+         <img src="public/card_detail.png" alt="Paylio Homepage">
+    </a>    
+</p>
+
+- Security
+<p align="center">
+    <a href="">
+         <img src="public/security.png" alt="Paylio Homepage">
+    </a>    
+</p> 
+
+
+- Admin
+<p align="center">
+    <a href="">
+        <img src="public/admin_account.png" alt="Paylio Homepage">
+        <img src="public/admin_notification.png" alt="Paylio Homepage">
+        <img src="public/admin_transactions.png" alt="Paylio Homepage">
+         <img src="public/admin_user_edit.png" alt="Paylio Homepage">
+         <img src="public/admin_users.png" alt="Paylio Homepage">
+         <img src="public/admin.png" alt="Paylio Homepage">
+      </a> 
+</p>
 
 ### ▶ Personal
 - Freelancer Payments
+<p align="center">
+    <a href="">
+      <img src="public/payment.png" alt="Paylio Homepage">
+      <img src="public/payment1.png" alt="Paylio Homepage">
+      <img src="public/payment2.png" alt="Paylio Homepage">
+      <img src="public/payment3.png" alt="Paylio Homepage">
+   </a> 
+
+</p>
+
 - Subscriptions
+<p align="center">
+    <a href="">
+        <img src="public/subscriptions.png" alt="Paylio Homepage">
+        <img src="public/subscriptions2.png" alt="Paylio Homepage">
+        <img src="public/subscriptions3.png" alt="Paylio Homepage">
+    </a>    
+</p>
 - Security
+<p align="center">
+    <a href="">
+        <img src="public/security1.png" alt="Paylio Homepage">
+        <img src="public/security3.png" alt="Paylio Homepage">
+    </a>    
+</p>
 - Fees
+<p align="center">
+    <a href="">
+        <img src="public/fees.png" alt="Paylio Homepage">
+    </a>    
+</p>
 
 ### ▶ Business
 - Business Payments
+<p align="center">
+    <a href="">
+        <img src="public/fees.png" alt="Paylio Homepage">
+    </a>    
+</p>
+
 - Business Account
+<p align="center">
+    <a href="">
+        <img src="public/businessAccount.png" alt="Business Homepage">
+    </a>    
+</p>
+
 - Corporate Card
+<p align="center">
+    <a href="">
+        <img src="public/CorporateCard.png" alt="Corporate Homepage">
+        <img src="public/CorporateCard1.png" alt="Corporate Homepage">
+    </a>    
+</p>
+
 - Expense Management
+<p align="center">
+    <a href="">
+        <img src="public/ExpenseManagement.png" alt="ExpenseManagement Homepage">
+    </a>    
+</p>
+
 - Budgeting & Analytics
+<p align="center">
+    <a href="">
+        <img src="public/Budgeting.png" alt="Budgeting Homepage">
+    </a>    
+</p>
+
 - Integrations
+<p align="center">
+    <a href="">
+        <img src="public/integrations.png" alt="Business Homepage">
+    </a>    
+</p>
+
 - Invoice Management
-- Security
+<p align="center">
+    <a href="">
+        <img src="public/invoice.png" alt="Business Homepage">
+    </a>    
+</p>
+
 - Rewards
-- Fees
+<p align="center">
+    <a href="">
+        <img src="public/Rewards.png" alt="Business Homepage">
+    </a>    
+</p>
 
 ### ▶ Company
 - About Us
+<p align="center">
+    <a href="">
+        <img src="public/about.png" alt="Business Homepage">
+    </a>    
+</p>
+
 - Career
+<p align="center">
+    <a href="">
+        <img src="public/career.png" alt="Business Homepage">
+    </a>    
+</p>
+
 - Career Details
+<p align="center">
+    <a href="">
+        <img src="public/careerDetails.png" alt="Business Homepage">
+    </a>    
+</p>
+
 - Blog / Blog Details
+<p align="center">
+    <a href="">
+        <img src="public/blog1.png" alt="Business Homepage">
+    </a>    
+</p>
+
 - Error Page
+<p align="center">
+    <a href="">
+        <img src="public/error.png" alt="Business Homepage">
+    </a>    
+</p>
+
 
 ### ▶ Help
 - Help Center
+<p align="center">
+    <a href="">
+        <img src="public/helpCenter.png" alt="Business Homepage">
+    </a>    
+</p>
+
 - Help Category
+<p align="center">
+    <a href="">
+        <img src="public/helpCategory.png" alt="Business Homepage">
+    </a>    
+</p>
 
 ---
 
