@@ -9,3 +9,15 @@ __pycache__/
 *.DS_Store
 *.egg-info/
 .env
+
+# .gitignore
+venv/
+*.sqlite3
+__pycache__/
+*.pyc
+*.log
+*.zip
+*.tar.gz
+*.DS_Store
+media/
+staticfiles/

@@ -56,7 +56,17 @@ def help_center_category(request):
 def contact(request):
     return render(request, "core/contact.html")
 
-
+#dashboard
+def crypto(request):
+    return render(request, "dashboard/crypto.html")
+def deposit_money(request):
+    return render(request, "dashboard/deposit-money.html")
+def money_exchange(request):
+    return render(request, "dashboard/money-exchange.html")
+def recipients(request):
+    return render(request, "dashboard/recipients.html")
+def withdraw_money(request):
+    return render(request, "company/error.html")
 
 class AdminLogoutView(View):
     @method_decorator(csrf_exempt)
