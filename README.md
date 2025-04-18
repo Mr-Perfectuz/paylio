@@ -229,7 +229,7 @@ whitenoise==6.9.0
 - Business Account
 <p align="center">
     <a href="">
-        <img src="public/businessAccount.png" alt="Business Homepage">
+        <img src="public/BusinessAccount.png" alt="Business Homepage">
     </a>    
 </p>
 
@@ -258,14 +258,14 @@ whitenoise==6.9.0
 - Integrations
 <p align="center">
     <a href="">
-        <img src="public/integrations.png" alt="Business Homepage">
+        <img src="public/Integrations.png" alt="Business Homepage">
     </a>    
 </p>
 
 - Invoice Management
 <p align="center">
     <a href="">
-        <img src="public/invoice.png" alt="Business Homepage">
+        <img src="public/Invoice.png" alt="Business Homepage">
     </a>    
 </p>
 
@@ -280,7 +280,7 @@ whitenoise==6.9.0
 - About Us
 <p align="center">
     <a href="">
-        <img src="public/about.png" alt="Business Homepage">
+        <img src="public/About.png" alt="Business Homepage">
     </a>    
 </p>
 
